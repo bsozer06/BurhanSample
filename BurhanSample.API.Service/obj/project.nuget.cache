@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "G6aONkhdw66mUgymUEBAXNWDGbTzc1Pl5VaGWlxKJjTtGs311BxN4Ufz4b9DcWRkpPTgEiUaazQ+/qDVuZ/92w==",
+  "success": true,
+  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\furka\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\furka\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\furka\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

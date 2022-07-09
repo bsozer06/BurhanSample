@@ -1,0 +1,12 @@
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\bin\Debug\net5.0\BurhanSample.Entities.deps.json
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\bin\Debug\net5.0\BurhanSample.Entities.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\bin\Debug\net5.0\BurhanSample.Entities.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.csproj.AssemblyReference.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.AssemblyInfoInputs.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.AssemblyInfo.cs
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.csproj.CoreCompileInputs.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\refint\BurhanSample.Entities.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\BurhanSample.Entities.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Entities\obj\Debug\net5.0\ref\BurhanSample.Entities.dll
