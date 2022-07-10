@@ -1821,6 +1821,16 @@
           "bin/placeholder/BurhanSample.DAL.dll": {}
         }
       },
+      "BurhanSample.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BurhanSample.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BurhanSample.DTO.dll": {}
+        }
+      },
       "BurhanSample.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6553,6 +6563,11 @@
       "path": "../BurhanSample.DAL/BurhanSample.DAL.csproj",
       "msbuildProject": "../BurhanSample.DAL/BurhanSample.DAL.csproj"
     },
+    "BurhanSample.DTO/1.0.0": {
+      "type": "project",
+      "path": "../BurhanSample.DTO/BurhanSample.DTO.csproj",
+      "msbuildProject": "../BurhanSample.DTO/BurhanSample.DTO.csproj"
+    },
     "BurhanSample.Entities/1.0.0": {
       "type": "project",
       "path": "../BurhanSample.Entities/BurhanSample.Entities.csproj",
@@ -6567,6 +6582,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BurhanSample.DAL >= 1.0.0",
+      "BurhanSample.DTO >= 1.0.0",
       "BurhanSample.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
@@ -6614,6 +6630,9 @@
             },
             "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
               "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj"
+            },
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj"
             }
           }
         }

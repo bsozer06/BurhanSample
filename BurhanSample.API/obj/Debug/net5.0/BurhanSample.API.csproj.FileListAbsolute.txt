@@ -114,3 +114,5 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Bur
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.Services.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.Services.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.Core.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.DTO.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.DTO.pdb

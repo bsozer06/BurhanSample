@@ -14,5 +14,13 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
         public CompanyRepository(RepositoryContext context) : base(context)
         {
         }
+
+        // Burada tanimlamak icin oncelikle interface uzerinde tnaimlamak gerekir.
+        public IEnumerable<Company> GetAllCompanies(bool trackChanges)
+        {
+            return GetAll(trackChanges).OrderBy(x => x.Name).ToList();
+        }
+
+
     }
 }

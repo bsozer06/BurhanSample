@@ -24,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BurhanSample.API.Service\BurhanSample.Services.csproj" />
     <ProjectReference Include="..\BurhanSample.DAL\BurhanSample.DAL.csproj" />
+    <ProjectReference Include="..\BurhanSample.DTO\BurhanSample.DTO.csproj" />
   </ItemGroup>
 
 </Project>

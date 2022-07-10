@@ -11,8 +11,8 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
     public class RepositoryManager : IRepositoryManager
     {
         private RepositoryContext _context;
-        private IEmployeeRepository _employeeRepository;
         private ICompanyRepository _companyRepository;
+        private IEmployeeRepository _employeeRepository;
 
         public RepositoryManager(RepositoryContext context)
         {
@@ -33,6 +33,7 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
                 return _employeeRepository;
             }
         }
+
 
         public void Save() => _context.SaveChanges();
 

@@ -117,3 +117,73 @@ VALUES (N'20220709211827_InitialData', N'5.0.17');
 2022-07-10 15:28:34.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
 2022-07-10 15:28:34.644 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.4346ms
 2022-07-10 15:28:49.940 +03:00 [INF] Application is shutting down...
+2022-07-10 17:06:36.976 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 17:06:37.032 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 17:06:37.034 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 17:06:37.035 +03:00 [INF] Hosting environment: Development
+2022-07-10 17:06:37.036 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 17:06:38.591 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 17:06:38.680 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 17:06:38.712 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 17:06:38.717 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 17:06:38.720 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 17:06:38.721 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 17:06:38.737 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 17:06:38.800 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 79.2878ms
+2022-07-10 17:06:38.806 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 17:06:38.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 229.5807ms
+2022-07-10 17:06:38.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 17:06:38.928 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 4.1305ms
+2022-07-10 17:07:50.897 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 17:07:50.900 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:07:50.904 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 17:07:52.788 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 17:07:55.640 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 17:07:55.669 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-10 17:07:55.728 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 4822.1216ms
+2022-07-10 17:07:55.732 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:07:55.780 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 4882.3548ms
+2022-07-10 17:08:00.047 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 17:08:00.050 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:08:00.054 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 17:08:00.090 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 17:08:00.100 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 17:08:00.105 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-10 17:08:00.107 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 47.8228ms
+2022-07-10 17:08:00.109 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:08:00.111 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 64.1489ms
+2022-07-10 17:19:06.709 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 17:19:06.788 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 17:19:06.790 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 17:19:06.792 +03:00 [INF] Hosting environment: Development
+2022-07-10 17:19:06.793 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 17:19:07.867 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 17:19:07.989 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 17:19:08.028 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 17:19:08.040 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 17:19:08.042 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 17:19:08.044 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 17:19:08.069 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 17:19:08.115 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 69.0304ms
+2022-07-10 17:19:08.128 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 17:19:08.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 286.8968ms
+2022-07-10 17:19:08.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 17:19:08.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 8.9339ms
+2022-07-10 17:19:12.918 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 17:19:12.921 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:19:12.924 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 17:19:14.567 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 17:19:16.336 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 17:19:16.367 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[BurhanSample.DTO.CompanyDto, BurhanSample.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-10 17:19:16.395 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 3467.3911ms
+2022-07-10 17:19:16.398 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 17:19:16.402 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 3483.8301ms

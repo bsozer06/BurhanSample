@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.DAL", "BurhanS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Core", "Core\BurhanSample.Core.csproj", "{0E275268-2A7D-4708-A858-7DBBF05B1E12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurhanSample.DTO", "BurhanSample.DTO\BurhanSample.DTO.csproj", "{4EB0B61D-E73B-4CE4-BB1B-65B15F982B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0E275268-2A7D-4708-A858-7DBBF05B1E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E275268-2A7D-4708-A858-7DBBF05B1E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E275268-2A7D-4708-A858-7DBBF05B1E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB0B61D-E73B-4CE4-BB1B-65B15F982B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB0B61D-E73B-4CE4-BB1B-65B15F982B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB0B61D-E73B-4CE4-BB1B-65B15F982B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB0B61D-E73B-4CE4-BB1B-65B15F982B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
