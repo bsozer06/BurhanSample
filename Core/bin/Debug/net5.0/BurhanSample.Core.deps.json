@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BurhanSample.Core/1.0.0": {
+        "runtime": {
+          "BurhanSample.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BurhanSample.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

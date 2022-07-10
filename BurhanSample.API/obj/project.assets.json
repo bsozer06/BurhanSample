@@ -1795,25 +1795,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BurhanSample.API.Service/1.0.0": {
+      "BurhanSample.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
-        },
         "compile": {
-          "bin/placeholder/BurhanSample.API.Service.dll": {}
+          "bin/placeholder/BurhanSample.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BurhanSample.API.Service.dll": {}
+          "bin/placeholder/BurhanSample.Core.dll": {}
         }
       },
       "BurhanSample.DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "BurhanSample.Core": "1.0.0",
           "BurhanSample.Entities": "1.0.0",
-          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
@@ -1834,14 +1831,17 @@
           "bin/placeholder/BurhanSample.Entities.dll": {}
         }
       },
-      "Core/1.0.0": {
+      "BurhanSample.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.1"
+        },
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/BurhanSample.Services.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/BurhanSample.Services.dll": {}
         }
       }
     }
@@ -6543,10 +6543,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BurhanSample.API.Service/1.0.0": {
+    "BurhanSample.Core/1.0.0": {
       "type": "project",
-      "path": "../BurhanSample.API.Service/BurhanSample.API.Service.csproj",
-      "msbuildProject": "../BurhanSample.API.Service/BurhanSample.API.Service.csproj"
+      "path": "../Core/BurhanSample.Core.csproj",
+      "msbuildProject": "../Core/BurhanSample.Core.csproj"
     },
     "BurhanSample.DAL/1.0.0": {
       "type": "project",
@@ -6558,16 +6558,16 @@
       "path": "../BurhanSample.Entities/BurhanSample.Entities.csproj",
       "msbuildProject": "../BurhanSample.Entities/BurhanSample.Entities.csproj"
     },
-    "Core/1.0.0": {
+    "BurhanSample.Services/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../BurhanSample.API.Service/BurhanSample.Services.csproj",
+      "msbuildProject": "../BurhanSample.API.Service/BurhanSample.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BurhanSample.API.Service >= 1.0.0",
       "BurhanSample.DAL >= 1.0.0",
+      "BurhanSample.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
@@ -6609,8 +6609,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj": {
-              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj"
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
             },
             "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
               "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj"

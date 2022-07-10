@@ -1,5 +1,7 @@
 ﻿using BurhanSample.API.Service.Abstract;
 using BurhanSample.API.Service.Concrete;
+using BurhanSample.DAL.Abstract;
+using BurhanSample.DAL.Concrete.EntityFramework;
 using BurhanSample.DAL.Concrete.EntityFramework.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -66,6 +68,15 @@ namespace BurhanSample.API.Extensions
                 options.UseSqlServer(configuration.GetConnectionString("SqlConnection")
                     ,x => x.MigrationsAssembly("BurhanSample.DAL")
                 ));
+
+        #endregion
+
+        #region Repository
+
+        public static void ConfigureRepositoryManager(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+        }
 
         #endregion
     }

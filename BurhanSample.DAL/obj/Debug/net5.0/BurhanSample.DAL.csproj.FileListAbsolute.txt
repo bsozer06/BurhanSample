@@ -16,3 +16,5 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\obj\Debug\net5.0\ref
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\obj\Debug\net5.0\BurhanSample.DAL.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\obj\Debug\net5.0\BurhanSample.DAL.genruntimeconfig.cache
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\obj\Debug\net5.0\ref\BurhanSample.DAL.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\bin\Debug\net5.0\BurhanSample.Core.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.DAL\bin\Debug\net5.0\BurhanSample.Core.pdb

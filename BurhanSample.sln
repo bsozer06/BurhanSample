@@ -5,13 +5,13 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.API", "BurhanSample.API\BurhanSample.API.csproj", "{88E94416-86DE-4EB4-916B-3384DA5FB004}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.API.Service", "BurhanSample.API.Service\BurhanSample.API.Service.csproj", "{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Services", "BurhanSample.API.Service\BurhanSample.Services.csproj", "{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Entities", "BurhanSample.Entities\BurhanSample.Entities.csproj", "{51E47FD6-E28F-4F7B-957E-085A9F035D92}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.DAL", "BurhanSample.DAL\BurhanSample.DAL.csproj", "{D737C240-B798-4E00-AF32-301C11F3455D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{0E275268-2A7D-4708-A858-7DBBF05B1E12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Core", "Core\BurhanSample.Core.csproj", "{0E275268-2A7D-4708-A858-7DBBF05B1E12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

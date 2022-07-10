@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace BurhanSample.DAL.Concrete.EntityFramework.Configurations
 {
+    /// <summary>
+    /// Seed the Company table  
+    /// </summary>
     public class CompanyConfiguration : IEntityTypeConfiguration<Company>
     {
         public void Configure(EntityTypeBuilder<Company> builder)

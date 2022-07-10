@@ -1520,6 +1520,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "BurhanSample.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BurhanSample.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BurhanSample.Core.dll": {}
+        }
+      },
       "BurhanSample.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1528,16 +1538,6 @@
         },
         "runtime": {
           "bin/placeholder/BurhanSample.Entities.dll": {}
-        }
-      },
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
         }
       }
     }
@@ -5763,21 +5763,21 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "BurhanSample.Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/BurhanSample.Core.csproj",
+      "msbuildProject": "../Core/BurhanSample.Core.csproj"
+    },
     "BurhanSample.Entities/1.0.0": {
       "type": "project",
       "path": "../BurhanSample.Entities/BurhanSample.Entities.csproj",
       "msbuildProject": "../BurhanSample.Entities/BurhanSample.Entities.csproj"
-    },
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "BurhanSample.Core >= 1.0.0",
       "BurhanSample.Entities >= 1.0.0",
-      "Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
@@ -5818,8 +5818,8 @@
             "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj": {
               "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj"
             },
-            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj": {
-              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj"
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
             }
           }
         }

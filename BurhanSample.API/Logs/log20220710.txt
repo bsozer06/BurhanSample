@@ -99,3 +99,21 @@ IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'EmployeeId'
 2022-07-10 00:18:38.429 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20220709211827_InitialData', N'5.0.17');
+2022-07-10 15:28:32.658 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 15:28:32.816 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 15:28:32.820 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 15:28:32.823 +03:00 [INF] Hosting environment: Development
+2022-07-10 15:28:32.829 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 15:28:34.128 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 15:28:34.285 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 15:28:34.336 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 15:28:34.343 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 15:28:34.344 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 15:28:34.346 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 15:28:34.369 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 15:28:34.475 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 106.6494ms
+2022-07-10 15:28:34.486 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 15:28:34.500 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 378.8022ms
+2022-07-10 15:28:34.636 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 15:28:34.644 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.4346ms
+2022-07-10 15:28:49.940 +03:00 [INF] Application is shutting down...

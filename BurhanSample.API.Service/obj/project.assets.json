@@ -159,9 +159,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj",
-      "projectName": "BurhanSample.API.Service",
-      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj",
+      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
+      "projectName": "BurhanSample.Services",
+      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
       "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\obj\\",
       "projectStyle": "PackageReference",

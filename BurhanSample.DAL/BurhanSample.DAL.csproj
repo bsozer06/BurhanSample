@@ -19,11 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BurhanSample.Entities\BurhanSample.Entities.csproj" />
-    <ProjectReference Include="..\Core\Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Abstract\" />
+    <ProjectReference Include="..\Core\BurhanSample.Core.csproj" />
   </ItemGroup>
 
 </Project>

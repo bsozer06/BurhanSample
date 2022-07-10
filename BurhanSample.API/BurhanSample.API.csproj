@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BurhanSample.API.Service\BurhanSample.API.Service.csproj" />
+    <ProjectReference Include="..\BurhanSample.API.Service\BurhanSample.Services.csproj" />
     <ProjectReference Include="..\BurhanSample.DAL\BurhanSample.DAL.csproj" />
   </ItemGroup>
 

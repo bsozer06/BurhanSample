@@ -1,0 +1,12 @@
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\bin\Debug\net5.0\BurhanSample.Services.deps.json
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\bin\Debug\net5.0\BurhanSample.Services.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\bin\Debug\net5.0\BurhanSample.Services.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.csproj.AssemblyReference.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.AssemblyInfoInputs.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.AssemblyInfo.cs
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.csproj.CoreCompileInputs.cache
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\refint\BurhanSample.Services.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\BurhanSample.Services.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API.Service\obj\Debug\net5.0\ref\BurhanSample.Services.dll

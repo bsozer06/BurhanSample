@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj",
-      "projectName": "Core",
-      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
+      "projectName": "BurhanSample.Core",
+      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
       "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\obj\\",
       "projectStyle": "PackageReference",

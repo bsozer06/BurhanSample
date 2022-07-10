@@ -4,12 +4,12 @@
     "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API\\BurhanSample.API.csproj": {}
   },
   "projects": {
-    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj": {
+    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj",
-        "projectName": "BurhanSample.API.Service",
-        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj",
+        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
+        "projectName": "BurhanSample.Services",
+        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
         "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -94,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.API.Service.csproj"
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
               },
               "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
                 "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj"
@@ -202,8 +202,8 @@
               "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj": {
                 "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj"
               },
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj"
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
               }
             }
           }
@@ -315,12 +315,12 @@
         }
       }
     },
-    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj": {
+    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
+        "projectName": "BurhanSample.Core",
+        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
         "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\obj\\",
         "projectStyle": "PackageReference",
