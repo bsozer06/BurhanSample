@@ -1,5 +1,7 @@
 ﻿using BurhanSample.API.Service.Abstract;
 using BurhanSample.API.Service.Concrete;
+using BurhanSample.Business.Abstract;
+using BurhanSample.Business.Concrete;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.DAL.Concrete.EntityFramework;
 using BurhanSample.DAL.Concrete.EntityFramework.Context;
@@ -76,6 +78,15 @@ namespace BurhanSample.API.Extensions
         public static void ConfigureRepositoryManager(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryManager, RepositoryManager>();
+        }
+
+        #endregion
+
+        #region Business Logic Layer/ Manager
+
+        public static void ConfigureBusinessManager(this IServiceCollection services)
+        {
+            services.AddScoped<ICompanyManager, CompanyManager>();
         }
 
         #endregion

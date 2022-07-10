@@ -1533,6 +1533,9 @@
       "BurhanSample.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BurhanSample.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BurhanSample.Entities.dll": {}
         },
@@ -5791,9 +5794,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj",
-      "projectName": "BurhanSample.DAL",
-      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj",
+      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
+      "projectName": "BurhanSample.DataAccess",
+      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
       "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\obj\\",
       "projectStyle": "PackageReference",

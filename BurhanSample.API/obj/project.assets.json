@@ -1795,6 +1795,21 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "BurhanSample.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BurhanSample.Core": "1.0.0",
+          "BurhanSample.DataAccess": "1.0.0",
+          "BurhanSample.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BurhanSample.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BurhanSample.Business.dll": {}
+        }
+      },
       "BurhanSample.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -1805,7 +1820,7 @@
           "bin/placeholder/BurhanSample.Core.dll": {}
         }
       },
-      "BurhanSample.DAL/1.0.0": {
+      "BurhanSample.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1815,25 +1830,18 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "compile": {
-          "bin/placeholder/BurhanSample.DAL.dll": {}
+          "bin/placeholder/BurhanSample.DataAccess.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BurhanSample.DAL.dll": {}
-        }
-      },
-      "BurhanSample.DTO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/BurhanSample.DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BurhanSample.DTO.dll": {}
+          "bin/placeholder/BurhanSample.DataAccess.dll": {}
         }
       },
       "BurhanSample.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "BurhanSample.Core": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BurhanSample.Entities.dll": {}
         },
@@ -6553,20 +6561,20 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "BurhanSample.Business/1.0.0": {
+      "type": "project",
+      "path": "../BurhanSample.Business/BurhanSample.Business.csproj",
+      "msbuildProject": "../BurhanSample.Business/BurhanSample.Business.csproj"
+    },
     "BurhanSample.Core/1.0.0": {
       "type": "project",
       "path": "../Core/BurhanSample.Core.csproj",
       "msbuildProject": "../Core/BurhanSample.Core.csproj"
     },
-    "BurhanSample.DAL/1.0.0": {
+    "BurhanSample.DataAccess/1.0.0": {
       "type": "project",
-      "path": "../BurhanSample.DAL/BurhanSample.DAL.csproj",
-      "msbuildProject": "../BurhanSample.DAL/BurhanSample.DAL.csproj"
-    },
-    "BurhanSample.DTO/1.0.0": {
-      "type": "project",
-      "path": "../BurhanSample.DTO/BurhanSample.DTO.csproj",
-      "msbuildProject": "../BurhanSample.DTO/BurhanSample.DTO.csproj"
+      "path": "../BurhanSample.DAL/BurhanSample.DataAccess.csproj",
+      "msbuildProject": "../BurhanSample.DAL/BurhanSample.DataAccess.csproj"
     },
     "BurhanSample.Entities/1.0.0": {
       "type": "project",
@@ -6581,8 +6589,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BurhanSample.DAL >= 1.0.0",
-      "BurhanSample.DTO >= 1.0.0",
+      "BurhanSample.Business >= 1.0.0",
+      "BurhanSample.DataAccess >= 1.0.0",
       "BurhanSample.Services >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.17",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
@@ -6628,11 +6636,11 @@
             "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
               "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
             },
-            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
-              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj"
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj"
             },
-            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj": {
-              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj"
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj"
             }
           }
         }

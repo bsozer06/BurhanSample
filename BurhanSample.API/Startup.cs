@@ -37,6 +37,7 @@ namespace BurhanSample.API
             services.ConfigureLoggerService();
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
+            services.ConfigureBusinessManager();
 
             services.AddControllers();
         }

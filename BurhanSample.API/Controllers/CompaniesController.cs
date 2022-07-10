@@ -1,8 +1,7 @@
 ﻿using BurhanSample.API.Service.Abstract;
-using BurhanSample.DAL.Abstract;
-using BurhanSample.DTO;
-using Microsoft.AspNetCore.Http;
+using BurhanSample.Business.Abstract;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Linq;
 
 namespace BurhanSample.API.Controllers
@@ -11,36 +10,31 @@ namespace BurhanSample.API.Controllers
     [ApiController]
     public class CompaniesController : ControllerBase
     {
-        private readonly IRepositoryManager _repository;
+        private ICompanyManager _manager;
         private readonly ILoggerManager _logger;
 
-        public CompaniesController(IRepositoryManager repository, ILoggerManager logger)
+        public CompaniesController(ICompanyManager manager, ILoggerManager logger)
         {
-            _repository = repository;
+            _manager = manager;
             _logger = logger;
         }
+
 
         [HttpGet]
         public IActionResult GetCompanies()
         {
             try
             {
-                var componies = _repository.Company.GetAllCompanies(trackChanges: false);
-
-                var componiesDto = componies.Select(c => new CompanyDto
-                {
-                    Id = c.Id,
-                    Name = c.Name,
-                    FullAddress = string.Join(' ', c.Address, c.Country)
-                });
-
-                return Ok(componiesDto);
+                var result = _manager.GetCompanies();
+                return Ok(result);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}"); 
+                _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}");
                 return StatusCode(500, "Internal server error");
             }
+
+         
         }
     }
 }

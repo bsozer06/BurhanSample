@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BurhanSample.API.Service\BurhanSample.Services.csproj" />
+    <ProjectReference Include="..\BurhanSample.DAL\BurhanSample.DataAccess.csproj" />
+    <ProjectReference Include="..\Core\BurhanSample.Core.csproj" />
+  </ItemGroup>
+
+</Project>

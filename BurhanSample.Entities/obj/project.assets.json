@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "BurhanSample.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/BurhanSample.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BurhanSample.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BurhanSample.Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/BurhanSample.Core.csproj",
+      "msbuildProject": "../Core/BurhanSample.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "BurhanSample.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\furka\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

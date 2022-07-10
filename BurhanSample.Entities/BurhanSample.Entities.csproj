@@ -8,4 +8,8 @@
     <Folder Include="Abstract\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Core\BurhanSample.Core.csproj" />
+  </ItemGroup>
+
 </Project>

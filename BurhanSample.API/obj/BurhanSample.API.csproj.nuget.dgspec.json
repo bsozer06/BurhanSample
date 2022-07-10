@@ -97,11 +97,11 @@
               "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
                 "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
               },
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj"
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj"
               },
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj"
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj"
               }
             }
           }
@@ -175,12 +175,79 @@
         }
       }
     },
-    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj": {
+    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj",
-        "projectName": "BurhanSample.DAL",
-        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj",
+        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj",
+        "projectName": "BurhanSample.Business",
+        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj",
+        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
+        "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
+              },
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj"
+              },
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
+        "projectName": "BurhanSample.DataAccess",
+        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
         "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
         "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -261,63 +328,6 @@
         }
       }
     },
-    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj",
-        "projectName": "BurhanSample.DTO",
-        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\BurhanSample.DTO.csproj",
-        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DTO\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -344,7 +354,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

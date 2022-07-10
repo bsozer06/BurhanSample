@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UDIjz3Lm3sy9lTQ/tz8fFwbtB3O2SwtvFVKII8H+Jjz0Ae3mXrBURjEEoJSRra56TcOwyrFXVNJ17FjN3vot4A==",
+  "dgSpecHash": "xsnRFu0fS/p5nRuYKIXRq/NcqBT+//stQ+0bo+R7Ih/Az6DmCqumVrCK2X1jZrnexXkAmyoWV64WFg1YO+KXhA==",
   "success": true,
-  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DAL.csproj",
+  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
