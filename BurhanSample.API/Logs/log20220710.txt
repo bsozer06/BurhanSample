@@ -383,3 +383,268 @@ ORDER BY [c].[Name]
 2022-07-10 21:55:06.724 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 3008.4338ms
 2022-07-10 21:55:06.727 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
 2022-07-10 21:55:06.733 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 3025.9680ms
+2022-07-10 22:24:19.849 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 22:24:19.918 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 22:24:19.920 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 22:24:19.921 +03:00 [INF] Hosting environment: Development
+2022-07-10 22:24:19.923 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 22:24:21.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 22:24:21.864 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:24:21.922 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 22:24:21.930 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 22:24:21.932 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 22:24:21.936 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 22:24:21.961 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 22:24:22.012 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 78.3534ms
+2022-07-10 22:24:22.018 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:24:22.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 384.7003ms
+2022-07-10 22:24:22.135 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 22:24:22.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 3.3209ms
+2022-07-10 22:24:42.732 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:24:42.734 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:24:42.737 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:24:43.778 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:24:45.880 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:24:46.151 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 34
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:24:46.157 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:24:46.176 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 3436.889ms
+2022-07-10 22:24:46.178 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:24:46.183 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 3451.8540ms
+2022-07-10 22:25:02.985 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:25:02.986 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:25:02.993 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:25:06.846 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:25:06.855 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:25:20.070 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 34
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:25:20.076 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:25:20.078 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 17075.1621ms
+2022-07-10 22:25:20.082 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:25:20.085 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 17099.9826ms
+2022-07-10 22:29:06.378 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 22:29:06.449 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 22:29:06.450 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 22:29:06.451 +03:00 [INF] Hosting environment: Development
+2022-07-10 22:29:06.452 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 22:29:07.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 22:29:07.939 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:29:07.975 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 22:29:07.983 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 22:29:07.986 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 22:29:07.988 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 22:29:08.009 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 22:29:08.058 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 73.4001ms
+2022-07-10 22:29:08.065 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:29:08.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 264.0133ms
+2022-07-10 22:29:08.201 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 22:29:08.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 6.4646ms
+2022-07-10 22:29:12.611 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:29:12.614 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:29:12.616 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:29:22.102 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:29:23.081 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:29:42.311 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 34
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:29:42.317 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:29:42.330 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 29710.5932ms
+2022-07-10 22:29:42.332 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:29:42.339 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 29728.2060ms
+2022-07-10 22:36:48.554 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 22:36:48.671 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 22:36:48.674 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 22:36:48.675 +03:00 [INF] Hosting environment: Development
+2022-07-10 22:36:48.677 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 22:36:49.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 22:36:49.895 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:36:49.939 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 22:36:49.944 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 22:36:49.962 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 22:36:49.966 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 22:36:50.007 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 22:36:50.114 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 137.6647ms
+2022-07-10 22:36:50.124 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:36:50.138 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 461.6296ms
+2022-07-10 22:36:50.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 22:36:50.274 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.2446ms
+2022-07-10 22:37:28.086 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:37:28.089 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:37:28.092 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:37:29.049 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:37:30.643 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:37:30.863 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 33
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:37:30.867 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:37:30.881 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 2785.6686ms
+2022-07-10 22:37:30.884 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:37:30.889 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 2802.9776ms
+2022-07-10 22:38:04.350 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 22:38:04.421 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 22:38:04.427 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 22:38:04.429 +03:00 [INF] Hosting environment: Development
+2022-07-10 22:38:04.431 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 22:38:05.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 22:38:05.335 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:38:05.366 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 22:38:05.370 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 22:38:05.371 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 22:38:05.373 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 22:38:05.383 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 22:38:05.451 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 67.0454ms
+2022-07-10 22:38:05.529 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:38:05.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 307.3810ms
+2022-07-10 22:38:05.649 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 22:38:05.661 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 12.3991ms
+2022-07-10 22:38:07.828 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:38:07.831 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:38:07.838 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:38:09.177 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:38:10.156 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:38:10.364 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 33
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:38:10.368 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:38:10.379 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 2538.6969ms
+2022-07-10 22:38:10.382 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:38:10.389 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 2560.9090ms
+2022-07-10 22:40:02.116 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:40:02.118 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:40:02.121 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:40:02.153 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:40:02.164 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:40:02.255 +03:00 [ERR] Something went wrong in the GetCompanies action AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+Object -> IEnumerable`1
+System.Object -> System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Company -> CompanyDto
+BurhanSample.Entities.Concrete.Company -> BurhanSample.Entities.Dto.CompanyDto
+   at lambda_method30(Closure , Company , CompanyDto , ResolutionContext )
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method29(Closure , Object , IEnumerable`1 , ResolutionContext )
+   at BurhanSample.Business.Concrete.CompanyManager.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\Concrete\CompanyManager.cs:line 33
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-10 22:40:02.260 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-10 22:40:02.262 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 138.1361ms
+2022-07-10 22:40:02.264 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:40:02.267 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 150.6150ms
+2022-07-10 22:48:27.895 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-10 22:48:27.951 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-10 22:48:27.955 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-10 22:48:27.958 +03:00 [INF] Hosting environment: Development
+2022-07-10 22:48:27.960 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-10 22:48:30.399 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-10 22:48:30.638 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:48:30.714 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-10 22:48:30.732 +03:00 [INF] Here is info message from our values controller.
+2022-07-10 22:48:30.740 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-10 22:48:30.742 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-10 22:48:30.771 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-10 22:48:30.860 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 122.6288ms
+2022-07-10 22:48:30.885 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-10 22:48:30.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 506.9337ms
+2022-07-10 22:48:31.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-10 22:48:31.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 9.1679ms
+2022-07-10 22:48:32.594 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-10 22:48:32.599 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:48:32.602 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-10 22:48:38.522 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-10 22:48:39.939 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-10 22:48:40.053 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-10 22:48:40.113 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 7507.1729ms
+2022-07-10 22:48:40.119 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-10 22:48:40.133 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 7538.7875ms

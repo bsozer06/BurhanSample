@@ -30,7 +30,6 @@ namespace BurhanSample.Business.Concrete
         public IDataResult<IEnumerable<CompanyDto>> GetCompanies()
         {
             var companies = _repository.Company.GetAllCompanies(trackChanges: false);
-
             var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesDto);

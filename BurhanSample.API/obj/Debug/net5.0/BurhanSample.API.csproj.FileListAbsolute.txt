@@ -116,3 +116,5 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Bur
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.DataAccess.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.Business.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.DataAccess.pdb
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\AutoMapper.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
