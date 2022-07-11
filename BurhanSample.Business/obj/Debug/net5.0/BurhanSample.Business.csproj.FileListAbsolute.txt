@@ -13,8 +13,6 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\obj\Debug\net5.
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Core.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.DataAccess.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Entities.dll
-D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Services.dll
-D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Services.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.DataAccess.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Core.pdb
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.Business\bin\Debug\net5.0\BurhanSample.Entities.pdb

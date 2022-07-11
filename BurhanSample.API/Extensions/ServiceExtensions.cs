@@ -1,5 +1,8 @@
-﻿using BurhanSample.API.Service.Abstract;
-using BurhanSample.API.Service.Concrete;
+﻿//using BurhanSample.API.Service.Abstract;
+//using BurhanSample.API.Service.Concrete;
+using BurhanSample.Core.Services.Abstract;
+using BurhanSample.Core.Services.Concrete;
+
 using BurhanSample.Business.Abstract;
 using BurhanSample.Business.Concrete;
 using BurhanSample.DAL.Abstract;
@@ -50,12 +53,12 @@ namespace BurhanSample.API.Extensions
 
         #endregion
 
-        #region Logging / Serilog
+        //#region Logging / Serilog
 
-        public static void ConfigureLoggerService(this IServiceCollection services) =>
-         services.AddScoped<ILoggerManager, LoggerManager>();
+        //public static void ConfigureLoggerService(this IServiceCollection services) =>
+        // services.AddScoped<ILoggerManager, LoggerManager>();
 
-        #endregion
+        //#endregion
 
         #region Sql Connection
 

@@ -1,0 +1,111 @@
+2022-07-11 16:47:36.726 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 16:47:36.851 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 16:47:36.856 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 16:47:36.858 +03:00 [INF] Hosting environment: Development
+2022-07-11 16:47:36.860 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 16:47:38.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 16:47:39.171 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:47:39.246 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 16:47:39.266 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 7.7763ms
+2022-07-11 16:47:39.272 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:47:56.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 500 0 application/json 17146.9336ms
+2022-07-11 16:48:18.901 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 16:48:18.985 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 16:48:18.990 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 16:48:18.995 +03:00 [INF] Hosting environment: Development
+2022-07-11 16:48:18.998 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 16:48:20.263 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 16:48:20.401 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:48:20.501 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 16:48:20.518 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 3.3825ms
+2022-07-11 16:48:20.527 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:48:20.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 500 0 application/json 349.8926ms
+2022-07-11 16:56:01.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 16:56:01.468 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:56:01.471 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 16:56:01.477 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 0.8147ms
+2022-07-11 16:56:01.479 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 16:56:01.548 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 500 0 application/json 86.6416ms
+2022-07-11 17:02:56.479 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 17:02:56.559 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 17:02:56.563 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 17:02:56.566 +03:00 [INF] Hosting environment: Development
+2022-07-11 17:02:56.567 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 17:02:57.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 17:02:58.102 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:02:58.148 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 17:02:58.155 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 17:02:58.158 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 17:02:58.161 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 17:02:58.173 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 17:02:58.220 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 60.3438ms
+2022-07-11 17:02:58.226 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:02:58.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 290.4257ms
+2022-07-11 17:02:58.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 17:02:58.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 4.6125ms
+2022-07-11 17:03:02.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-11 17:03:02.479 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:03:02.483 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 17:03:10.572 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 17:03:14.974 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-11 17:03:15.124 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-11 17:03:15.215 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 12728.4181ms
+2022-07-11 17:03:15.221 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:03:15.238 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 12761.0711ms
+2022-07-11 17:05:40.909 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 17:05:41.083 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 17:05:41.086 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 17:05:41.089 +03:00 [INF] Hosting environment: Development
+2022-07-11 17:05:41.093 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 17:05:42.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 17:05:42.524 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:05:42.595 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 17:05:42.634 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 17:05:42.639 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 17:05:42.646 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 17:05:42.670 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 17:05:42.764 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 121.6346ms
+2022-07-11 17:05:42.778 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:05:42.790 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 427.9916ms
+2022-07-11 17:05:42.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 17:05:42.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.7323ms
+2022-07-11 17:05:47.960 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-11 17:05:47.964 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:05:47.972 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 17:05:49.101 +03:00 [ERR] Something went wrong in the GetCompanies action System.Exception: Exception
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-11 17:05:49.105 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-11 17:05:49.127 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 1150.2413ms
+2022-07-11 17:05:49.132 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:05:49.141 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 1180.6854ms
+2022-07-11 17:06:03.475 +03:00 [INF] Application is shutting down...
+2022-07-11 17:08:00.415 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 17:08:00.506 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 17:08:00.508 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 17:08:00.510 +03:00 [INF] Hosting environment: Development
+2022-07-11 17:08:00.511 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 17:08:01.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 17:08:01.970 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:08:02.012 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 17:08:02.049 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 17:08:02.051 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 17:08:02.053 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 17:08:02.073 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 17:08:02.174 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 116.5228ms
+2022-07-11 17:08:02.191 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 17:08:02.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 366.1650ms
+2022-07-11 17:08:02.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 17:08:02.398 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 8.4133ms
+2022-07-11 17:08:08.029 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-11 17:08:08.032 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:08:08.043 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 17:08:08.939 +03:00 [ERR] Something went wrong in the GetCompanies action System.Exception: Exception
+   at BurhanSample.API.Controllers.CompaniesController.GetCompanies() in D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\Controllers\CompaniesController.cs:line 28
+2022-07-11 17:08:08.942 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2022-07-11 17:08:08.958 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 911.9857ms
+2022-07-11 17:08:08.961 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 17:08:08.966 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 500 - text/plain;+charset=utf-8 936.3359ms
+2022-07-11 17:08:25.195 +03:00 [INF] Application is shutting down...

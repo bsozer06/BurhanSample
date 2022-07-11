@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BurhanSample.API.Service\BurhanSample.Services.csproj" />
     <ProjectReference Include="..\BurhanSample.Business\BurhanSample.Business.csproj" />
     <ProjectReference Include="..\BurhanSample.DAL\BurhanSample.DataAccess.csproj" />
   </ItemGroup>

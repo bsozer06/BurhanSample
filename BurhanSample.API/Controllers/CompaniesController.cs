@@ -1,5 +1,5 @@
-﻿using BurhanSample.API.Service.Abstract;
-using BurhanSample.Business.Abstract;
+﻿using BurhanSample.Business.Abstract;
+using BurhanSample.Core.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -25,6 +25,7 @@ namespace BurhanSample.API.Controllers
         {
             try
             {
+                throw new Exception("Exception");
                 var result = _manager.GetCompanies();
                 return Ok(result);
             }

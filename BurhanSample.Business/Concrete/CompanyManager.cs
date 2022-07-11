@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using BurhanSample.API.Service.Abstract;
+//using BurhanSample.API.Service.Abstract;
 using BurhanSample.Business.Abstract;
+using BurhanSample.Core.Services.Abstract;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.DAL.Concrete.EntityFramework.Context;
 using BurhanSample.Entities.Dto;

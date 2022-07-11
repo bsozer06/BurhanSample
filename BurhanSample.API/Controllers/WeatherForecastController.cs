@@ -1,4 +1,4 @@
-﻿using BurhanSample.API.Service.Abstract;
+﻿using BurhanSample.Core.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

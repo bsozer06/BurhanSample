@@ -1,4 +1,5 @@
 using BurhanSample.API.Extensions;
+using BurhanSample.Core.Extensions;
 using BurhanSample.DataAccess.Mapping.Profiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -57,6 +58,8 @@ namespace BurhanSample.API
             {
                 app.UseHsts();
             }
+
+            app.ConfigureCustomExceptionMiddleware();       /// Come from the Core project
 
             app.UseHttpsRedirection();
 

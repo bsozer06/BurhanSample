@@ -4,69 +4,6 @@
     "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API\\BurhanSample.API.csproj": {}
   },
   "projects": {
-    "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
-        "projectName": "BurhanSample.Services",
-        "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj",
-        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.Extensions.Logging.Abstractions": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API\\BurhanSample.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -94,9 +31,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
-              },
               "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj": {
                 "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj"
               },
@@ -206,9 +140,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj": {
-                "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.API.Service\\BurhanSample.Services.csproj"
-              },
               "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj": {
                 "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj"
               },
@@ -435,6 +366,24 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

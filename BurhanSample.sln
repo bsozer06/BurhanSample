@@ -5,21 +5,17 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.API", "BurhanSample.API\BurhanSample.API.csproj", "{88E94416-86DE-4EB4-916B-3384DA5FB004}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Services", "BurhanSample.API.Service\BurhanSample.Services.csproj", "{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Entities", "BurhanSample.Entities\BurhanSample.Entities.csproj", "{51E47FD6-E28F-4F7B-957E-085A9F035D92}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.DataAccess", "BurhanSample.DAL\BurhanSample.DataAccess.csproj", "{D737C240-B798-4E00-AF32-301C11F3455D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Core", "Core\BurhanSample.Core.csproj", "{0E275268-2A7D-4708-A858-7DBBF05B1E12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurhanSample.Business", "BurhanSample.Business\BurhanSample.Business.csproj", "{A033C6A4-2251-44CB-99FB-482CAEDBC470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BurhanSample.Business", "BurhanSample.Business\BurhanSample.Business.csproj", "{A033C6A4-2251-44CB-99FB-482CAEDBC470}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{C540135C-AD10-48F9-BC52-C0AD3244E9BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{83EADDA1-C4C2-4E83-BE2A-BB3E854F1633}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{3F3ABAAC-19D4-4EE2-9E98-53EBD11B21A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +27,6 @@ Global
 		{88E94416-86DE-4EB4-916B-3384DA5FB004}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88E94416-86DE-4EB4-916B-3384DA5FB004}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88E94416-86DE-4EB4-916B-3384DA5FB004}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD8F2841-DEA9-4030-BDC1-35D68AD510DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51E47FD6-E28F-4F7B-957E-085A9F035D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51E47FD6-E28F-4F7B-957E-085A9F035D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51E47FD6-E28F-4F7B-957E-085A9F035D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,7 +49,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{88E94416-86DE-4EB4-916B-3384DA5FB004} = {C540135C-AD10-48F9-BC52-C0AD3244E9BD}
-		{DD8F2841-DEA9-4030-BDC1-35D68AD510DE} = {3F3ABAAC-19D4-4EE2-9E98-53EBD11B21A1}
 		{51E47FD6-E28F-4F7B-957E-085A9F035D92} = {C540135C-AD10-48F9-BC52-C0AD3244E9BD}
 		{D737C240-B798-4E00-AF32-301C11F3455D} = {C540135C-AD10-48F9-BC52-C0AD3244E9BD}
 		{0E275268-2A7D-4708-A858-7DBBF05B1E12} = {83EADDA1-C4C2-4E83-BE2A-BB3E854F1633}
