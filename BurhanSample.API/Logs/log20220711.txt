@@ -454,3 +454,80 @@ VALUES (@p0, @p1, @p2, @p3);
 2022-07-11 21:16:03.402 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API) in 5724.2054ms
 2022-07-11 21:16:03.408 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API)'
 2022-07-11 21:16:03.422 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/companies application/json 82 - 201 - application/json;+charset=utf-8 5766.8900ms
+2022-07-11 22:01:18.424 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 22:01:18.685 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 22:01:18.688 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:01:18.690 +03:00 [INF] Hosting environment: Development
+2022-07-11 22:01:18.692 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 22:01:19.804 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 22:01:20.010 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:01:20.086 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 22:01:20.098 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 22:01:20.102 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 22:01:20.111 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 22:01:20.153 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 22:01:20.241 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 135.3311ms
+2022-07-11 22:01:20.255 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:01:20.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 472.4461ms
+2022-07-11 22:01:20.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 22:01:20.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 11.9033ms
+2022-07-11 22:01:26.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2022-07-11 22:01:26.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 404 0 - 5.6566ms
+2022-07-11 22:03:42.932 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 22:03:42.999 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 22:03:43.001 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:03:43.003 +03:00 [INF] Hosting environment: Development
+2022-07-11 22:03:43.004 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 22:03:44.435 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 22:03:44.638 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:03:44.692 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 22:03:44.703 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 22:03:44.705 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 22:03:44.707 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 22:03:44.725 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 22:03:44.794 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 82.2139ms
+2022-07-11 22:03:44.823 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:03:44.838 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 412.8127ms
+2022-07-11 22:03:44.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 22:03:44.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.3504ms
+2022-07-11 22:04:41.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2022-07-11 22:04:41.260 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 7.8342ms
+2022-07-11 22:04:41.294 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-11 22:04:41.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2022-07-11 22:04:41.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 477.6601ms
+2022-07-11 22:04:41.774 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-07-11 22:04:41.779 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143943 text/css 35.2330ms
+2022-07-11 22:04:41.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2022-07-11 22:04:41.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-11 22:04:41.974 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2022-07-11 22:04:42.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 51.8146ms
+2022-07-11 22:04:42.065 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-07-11 22:04:42.070 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-07-11 22:04:42.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 99.7515ms
+2022-07-11 22:04:42.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 110.6891ms
+2022-07-11 22:04:42.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-11 22:04:42.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - -
+2022-07-11 22:04:42.717 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-07-11 22:04:42.724 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 13.7949ms
+2022-07-11 22:04:42.843 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.0632ms
+2022-07-11 22:04:49.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/WeatherForecast - -
+2022-07-11 22:04:49.260 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:04:49.266 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 22:04:49.272 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 22:04:49.275 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 22:04:49.278 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 22:04:49.284 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 22:04:49.288 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 15.8218ms
+2022-07-11 22:04:49.293 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 22:04:49.300 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 43.1756ms
+2022-07-11 22:06:25.781 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 22:06:25.979 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 22:06:25.983 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 22:06:26.004 +03:00 [INF] Hosting environment: Development
+2022-07-11 22:06:26.012 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 22:06:27.047 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-11 22:06:27.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 412.3486ms
+2022-07-11 22:06:27.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-11 22:06:27.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 97.0947ms
+2022-07-11 22:06:28.151 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-11 22:06:28.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.5683ms

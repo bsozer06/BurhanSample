@@ -117,3 +117,8 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Bur
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\AutoMapper.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\obj\Debug\net5.0\BurhanSample.API.MvcApplicationPartsAssemblyInfo.cs

@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,11 @@ namespace BurhanSample.API
 
             services.AddControllers();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+            });
+
             #region Content type => XML
             /* Accept : text/xml olmalý */
 
@@ -69,6 +75,12 @@ namespace BurhanSample.API
             {
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
+            });
 
             app.ConfigureCustomExceptionMiddleware();       /// Come from the Core project
 
