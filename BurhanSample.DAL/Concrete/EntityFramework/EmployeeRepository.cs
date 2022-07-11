@@ -14,5 +14,13 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
         public EmployeeRepository(RepositoryContext context) : base(context)
         {
         }
+
+        public Employee GetEmployee(Guid companyId, Guid id, bool trackChanges)
+        {
+            return GetEmployee(companyId, id, trackChanges);
+        }
+
+        public IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges) =>
+                GetByCondition(e => e.CompanyId == companyId, trackChanges).OrderBy(e => e.Name);
     }
 }

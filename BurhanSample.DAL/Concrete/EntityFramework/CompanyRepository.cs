@@ -21,6 +21,8 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
             return GetAll(trackChanges).OrderBy(x => x.Name).ToList();
         }
 
+        public Company GetCompany(Guid companyId, bool trackChanges) =>
+            GetByCondition(c => c.Id == companyId, trackChanges).FirstOrDefault();
 
     }
 }

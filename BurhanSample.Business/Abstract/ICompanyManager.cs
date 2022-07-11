@@ -11,5 +11,6 @@ namespace BurhanSample.Business.Abstract
     public interface ICompanyManager
     {
         IDataResult<IEnumerable<CompanyDto>> GetCompanies();
+        IDataResult<CompanyDto> GetCompany(Guid id);
     }
 }

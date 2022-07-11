@@ -36,5 +36,22 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesDto);
 
         }
+
+        public IDataResult<CompanyDto> GetCompany(Guid id)
+        {
+            var company = _repository.Company.GetCompany(id, false);
+            if (company == null)
+            {
+                _logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
+                return null;
+            }
+
+            var companyDto = _mapper.Map<CompanyDto>(company);
+            return new SuccessDataResult<CompanyDto>(companyDto);
+
+        }
+
+
+
     }
 }

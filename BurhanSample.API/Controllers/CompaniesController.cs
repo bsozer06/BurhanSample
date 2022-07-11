@@ -19,23 +19,20 @@ namespace BurhanSample.API.Controllers
             _logger = logger;
         }
 
-
+        // api/companies
         [HttpGet]
         public IActionResult GetCompanies()
         {
-            try
-            {
-                throw new Exception("Exception");
-                var result = _manager.GetCompanies();
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}");
-                return StatusCode(500, "Internal server error");
-            }
+            var result = _manager.GetCompanies();
+            return Ok(result);
+        }
 
-         
+        // api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3
+        [HttpGet("{id}")]
+        public IActionResult GetCompany(Guid id)
+        {
+            var result = _manager.GetCompany(id);
+            return Ok(result);
         }
     }
 }

@@ -26,29 +26,26 @@ namespace BurhanSample.Core.Extensions
             {
                 await _next(httpContext);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                await HandleExceptionAsync(httpContext, logger);
+                await HandleExceptionAsync(httpContext, ex, logger);
             }
         }
 
-        private async Task HandleExceptionAsync(HttpContext httpContext, ILoggerManager logger)
+        private async Task HandleExceptionAsync(HttpContext httpContext, Exception ex, ILoggerManager logger)
         {
             httpContext.Response.ContentType = "application/json";
             httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-            var contextFeature = httpContext.Features.Get<IExceptionHandlerFeature>();
-            if (contextFeature != null)
+            //var contextFeature = httpContext.Features.Get<IExceptionHandlerFeature>();
+
+            logger.LogError("----------------------------------------------------------");
+            logger.LogError($"Something went wrong: {ex.Message}");
+            await httpContext.Response.WriteAsync(new ErrorModel()
             {
-                logger.LogError("----------------------------------------------------------");
-                logger.LogError($"Something went wrong: {contextFeature.Error}"); 
-                await httpContext.Response.WriteAsync(new ErrorModel() 
-                {
-                    StatusCode = httpContext.Response.StatusCode,
-                    Message = "Internal Server Error." 
-                }.ToString());
-                logger.LogError("----------------------------------------------------------");
-            }
+                StatusCode = httpContext.Response.StatusCode,
+                Message = ex.Message ?? ex.InnerException.ToString()
+            }.ToString());
 
         }
     }
