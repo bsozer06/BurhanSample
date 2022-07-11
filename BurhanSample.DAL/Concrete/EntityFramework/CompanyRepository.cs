@@ -25,5 +25,8 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public void CreateCompany(Company company) => Create(company);
 
+        public IEnumerable<Company> GetByIds(IEnumerable<Guid> ids, bool trackChanges) => 
+            GetByCondition(x => ids.Contains(x.Id), trackChanges).ToList();
+
     }
 }

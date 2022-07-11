@@ -1,17 +1,13 @@
 ﻿using AutoMapper;
-//using BurhanSample.API.Service.Abstract;
 using BurhanSample.Business.Abstract;
 using BurhanSample.Core.Services.Abstract;
 using BurhanSample.DAL.Abstract;
-using BurhanSample.DAL.Concrete.EntityFramework.Context;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.Dto;
 using Core.Utilities.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BurhanSample.Business.Concrete
 {
@@ -20,7 +16,6 @@ namespace BurhanSample.Business.Concrete
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
-
 
         public CompanyManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
@@ -70,7 +65,44 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<CompanyDto>(companyToReturn);
         }
 
+        public IDataResult<IEnumerable<CompanyDto>> GetCompanyCollection(IEnumerable<Guid> ids)
+        {
+            if (ids == null) { 
+                _logger.LogError("Parameter ids is null"); 
+                return new ErrorDataResult<IEnumerable<CompanyDto>>("Parameter ids is null"); 
+            }
+            var companyEntities = _repository.Company.GetByIds(ids, false); 
 
+            if (ids.Count() != companyEntities.Count()) 
+            { 
+                _logger.LogError("Some ids are not valid in a collection");
+                return new ErrorDataResult<IEnumerable<CompanyDto>>("Some ids are not valid in a collection");
+            }
+
+            var companiesToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities);
+
+            return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesToReturn);
+        }
+
+        public IDataResult<IEnumerable<CompanyDto>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection) {
+            if (companyCollection == null)
+            { 
+                _logger.LogError("Company collection sent from client is null.");
+                return new ErrorDataResult<IEnumerable<CompanyDto>>("Company collection is null"); 
+            } 
+
+            var companyEntities = _mapper.Map<IEnumerable<Company>>(companyCollection); 
+            foreach (var company in companyEntities) 
+            {
+                _repository.Company.CreateCompany(company); 
+            } 
+            _repository.Save();
+            
+            var companyCollectionToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities); 
+            //var ids = string.Join(",", companyCollectionToReturn.Select(c => c.Id)); 
+            
+            return new SuccessDataResult<IEnumerable<CompanyDto>>(companyCollectionToReturn);
+        }
 
     }
 }

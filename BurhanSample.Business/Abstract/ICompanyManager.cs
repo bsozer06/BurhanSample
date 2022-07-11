@@ -13,5 +13,7 @@ namespace BurhanSample.Business.Abstract
         IDataResult<IEnumerable<CompanyDto>> GetCompanies();
         IDataResult<CompanyDto> GetCompany(Guid id);
         IDataResult<CompanyDto> CreateCompany(CompanyForCreationDto company);
+        IDataResult<IEnumerable<CompanyDto>> GetCompanyCollection(IEnumerable<Guid> ids);
+        IDataResult<IEnumerable<CompanyDto>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection);
     }
 }

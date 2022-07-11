@@ -1,8 +1,9 @@
-﻿using BurhanSample.Business.Abstract;
-using BurhanSample.Core.Services.Abstract;
+﻿using BurhanSample.API.Helper.ModelBinder;
+using BurhanSample.Business.Abstract;
 using BurhanSample.Entities.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace BurhanSample.API.Controllers
@@ -10,12 +11,10 @@ namespace BurhanSample.API.Controllers
     public class CompaniesController : BaseApiController
     {
         private ICompanyManager _manager;
-        private readonly ILoggerManager _logger;
 
-        public CompaniesController(ICompanyManager manager, ILoggerManager logger)
+        public CompaniesController(ICompanyManager manager)
         {
             _manager = manager;
-            _logger = logger;
         }
 
         // api/companies
@@ -27,7 +26,7 @@ namespace BurhanSample.API.Controllers
         }
 
         // api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3
-        [HttpGet("{id}", Name ="CompanyById")]
+        [HttpGet("{id}", Name = "CompanyById")]
         public IActionResult GetCompany(Guid id)
         {
             var result = _manager.GetCompany(id);
@@ -40,5 +39,23 @@ namespace BurhanSample.API.Controllers
             var result = _manager.CreateCompany(company);
             return CreatedAtRoute("CompanyById", new { id = result.Data.Id }, result);
         }
+
+
+        [HttpGet("collection/({ids})", Name = "CompanyCollection")]
+        public IActionResult GetCompanyCollection([ModelBinder(BinderType=typeof(ArrayModelBinder))] IEnumerable<Guid> ids)
+        {
+            var result = _manager.GetCompanyCollection(ids);
+            return Ok(result);
+        }
+
+        [HttpPost("collection")]
+        public IActionResult CreateCompanyCollection([FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
+        {
+            var result = _manager.CreateCompanyCollection(companyCollection);
+            return CreatedAtRoute("CompanyCollection",
+                new { ids= string.Join(",", result.Data.Select(c => c.Id)) },
+                result);
+        }
+
     }
 }

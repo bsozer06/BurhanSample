@@ -1,6 +1,5 @@
 ﻿using BurhanSample.Business.Abstract;
-using BurhanSample.Core.Services.Abstract;
-using Microsoft.AspNetCore.Http;
+using BurhanSample.Entities.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -9,21 +8,33 @@ namespace BurhanSample.API.Controllers
     public class EmployeesController : BaseApiController
     {
         private IEmployeeManager _manager;
-        private readonly ILoggerManager _logger;
 
-        public EmployeesController(IEmployeeManager manager, ILoggerManager logger)
+        public EmployeesController(IEmployeeManager manager)
         {
             _manager = manager;
-            _logger = logger;
         }
 
+        [HttpGet]
+        public IActionResult GetEmployeeForCompany(Guid companyId, Guid id)
+        {
+            var result = _manager.GetEmployee(companyId, id, false);
+            return Ok(result);
+        }
 
         // api/employees
-        [HttpGet]
+        [HttpGet("{id}", Name = "GetEmployeeForCompany")]
         public IActionResult GetEmployeesForCompany(Guid companyId)
         {
             var result = _manager.GetEmployees(companyId, false);
             return Ok(result);
+        }
+
+        /// calismiyor
+        [HttpPost]
+        public IActionResult CreateEmployeeForCompany(Guid companyId, [FromBody] EmployeeForCreationDto employee)
+        {
+            var result = _manager.CreateEmployeeForCompany(companyId, employee);
+            return CreatedAtRoute("GetEmployeeForCompany", new { companyId, id = result.Data.Id}, result.Data);
         }
     }
 }

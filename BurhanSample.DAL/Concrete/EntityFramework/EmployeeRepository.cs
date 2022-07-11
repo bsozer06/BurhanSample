@@ -22,5 +22,12 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges) =>
                 GetByCondition(e => e.CompanyId == companyId, trackChanges).OrderBy(e => e.Name);
+
+        public void CreateEmployeeForCompany(Guid companyId, Employee employee)
+        {
+            employee.CompanyId = companyId; 
+            Create(employee);
+        }
+
     }
 }

@@ -90,6 +90,7 @@ namespace BurhanSample.API.Extensions
         public static void ConfigureBusinessManager(this IServiceCollection services)
         {
             services.AddScoped<ICompanyManager, CompanyManager>();
+            services.AddScoped<IEmployeeManager, EmployeeManager>();
         }
 
         #endregion
