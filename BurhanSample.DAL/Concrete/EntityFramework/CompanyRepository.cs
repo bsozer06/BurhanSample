@@ -15,7 +15,6 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
         {
         }
 
-        // Burada tanimlamak icin oncelikle interface uzerinde tnaimlamak gerekir.
         public IEnumerable<Company> GetAllCompanies(bool trackChanges)
         {
             return GetAll(trackChanges).OrderBy(x => x.Name).ToList();
@@ -23,6 +22,8 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public Company GetCompany(Guid companyId, bool trackChanges) =>
             GetByCondition(c => c.Id == companyId, trackChanges).FirstOrDefault();
+
+        public void CreateCompany(Company company) => Create(company);
 
     }
 }

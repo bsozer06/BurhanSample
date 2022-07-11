@@ -18,6 +18,8 @@ namespace BurhanSample.DataAccess.Mapping.Profiles
                 opt.MapFrom(src => string.Join(' ', src.Address, src.Country)));
 
             CreateMap<Employee, EmployeeDto>().ReverseMap();
+
+            CreateMap<CompanyForCreationDto, Company>();
         }
     }
 }

@@ -34,7 +34,7 @@ namespace BurhanSample.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(MappingProfile));         /// typeof(Startup) olmuyor. !
+            services.AddAutoMapper(typeof(MappingProfile));         /// **** typeof(Startup) olmuyor. !
 
             services.ConfigureCors();
             services.ConfigureIISIntegration();
@@ -44,6 +44,17 @@ namespace BurhanSample.API
             services.ConfigureBusinessManager();
 
             services.AddControllers();
+
+            #region Content type => XML
+            /* Accept : text/xml olmalý */
+
+            //services.AddControllers(config =>
+            //{
+            //    config.RespectBrowserAcceptHeader = true;
+            //    config.ReturnHttpNotAcceptable = true;
+            //}).AddXmlDataContractSerializerFormatters();
+
+            #endregion
 
         }
 

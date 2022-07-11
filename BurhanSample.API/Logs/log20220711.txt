@@ -313,3 +313,144 @@ WHERE [c].[CompanyId] = @__companyId_0
 2022-07-11 19:47:16.557 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API) in 32.4547ms
 2022-07-11 19:47:16.560 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
 2022-07-11 19:47:16.562 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 - - - 200 - application/json;+charset=utf-8 44.1721ms
+2022-07-11 20:46:58.772 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 20:46:58.855 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 20:46:58.858 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 20:46:58.860 +03:00 [INF] Hosting environment: Development
+2022-07-11 20:46:58.863 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 20:47:00.377 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 20:47:00.517 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 20:47:00.567 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 20:47:00.574 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 20:47:00.576 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 20:47:00.578 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 20:47:00.606 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 20:47:00.673 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 92.2782ms
+2022-07-11 20:47:00.681 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 20:47:00.701 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 193 application/xml;+charset=utf-8 332.1473ms
+2022-07-11 20:47:00.887 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 20:47:00.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.9376ms
+2022-07-11 20:47:35.924 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 20:47:36.058 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 20:47:36.060 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 20:47:36.061 +03:00 [INF] Hosting environment: Development
+2022-07-11 20:47:36.063 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 20:47:37.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 20:47:37.735 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 20:47:37.775 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 20:47:37.784 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 20:47:37.787 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 20:47:37.789 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 20:47:37.824 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 20:47:37.873 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 81.7566ms
+2022-07-11 20:47:37.882 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 20:47:37.897 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 193 application/xml;+charset=utf-8 304.0646ms
+2022-07-11 20:47:38.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 20:47:38.092 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 7.9442ms
+2022-07-11 20:48:01.647 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 - -
+2022-07-11 20:48:01.651 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:48:01.676 +03:00 [INF] Route matched with {action = "GetCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompany(System.Guid) on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 20:48:04.099 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 20:48:06.654 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-11 20:48:06.719 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-11 20:48:06.759 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API) in 5078.4163ms
+2022-07-11 20:48:06.762 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:48:06.767 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 - - - 200 - application/json;+charset=utf-8 5120.0383ms
+2022-07-11 20:49:01.584 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 text/xml -
+2022-07-11 20:49:01.591 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:49:01.596 +03:00 [INF] Route matched with {action = "GetCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompany(System.Guid) on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 20:49:01.687 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 20:49:01.704 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-11 20:49:01.711 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-11 20:49:01.715 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API) in 109.3772ms
+2022-07-11 20:49:01.719 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:49:01.721 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 text/xml - - 200 - application/json;+charset=utf-8 137.5684ms
+2022-07-11 20:49:13.031 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 - -
+2022-07-11 20:49:13.042 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:49:13.046 +03:00 [INF] Route matched with {action = "GetCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompany(System.Guid) on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 20:49:13.096 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 20:49:13.107 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-11 20:49:13.127 +03:00 [WRN] An error occurred while trying to create a DataContractSerializer for the type 'Core.Utilities.Results.SuccessDataResult`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+System.Runtime.Serialization.InvalidDataContractException: Type 'Core.Utilities.Results.DataResult`1[BurhanSample.Entities.Dto.CompanyDto]' cannot be serialized. Consider marking it with the DataContractAttribute attribute, and marking all of its members you want serialized with the DataMemberAttribute attribute. Alternatively, you can ensure that the type is public and has a parameterless constructor - all public members of the type will then be serialized, and no attributes will be required.
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.ThrowInvalidDataContractException(String message, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.GetDataContractSkipValidation(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.GetDataContract(RuntimeTypeHandle typeHandle, Type type, SerializationMode mode)
+   at System.Runtime.Serialization.ClassDataContract.ClassDataContractCriticalHelper..ctor(Type type)
+   at System.Runtime.Serialization.ClassDataContract..ctor(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.GetDataContractSkipValidation(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.GetDataContract(RuntimeTypeHandle typeHandle, Type type, SerializationMode mode)
+   at System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter.CreateSerializer(Type type)
+2022-07-11 20:49:13.198 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-11 20:49:13.201 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API) in 135.9054ms
+2022-07-11 20:49:13.204 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompany (BurhanSample.API)'
+2022-07-11 20:49:13.206 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3 - - - 200 - application/json;+charset=utf-8 174.5695ms
+2022-07-11 20:49:24.755 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/companies - -
+2022-07-11 20:49:24.758 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 20:49:24.765 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 20:49:24.782 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 20:49:24.816 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-11 20:49:24.855 +03:00 [WRN] An error occurred while trying to create a DataContractSerializer for the type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+System.Runtime.Serialization.InvalidDataContractException: Type 'Core.Utilities.Results.DataResult`1[System.Collections.Generic.IEnumerable`1[BurhanSample.Entities.Dto.CompanyDto]]' cannot be serialized. Consider marking it with the DataContractAttribute attribute, and marking all of its members you want serialized with the DataMemberAttribute attribute. Alternatively, you can ensure that the type is public and has a parameterless constructor - all public members of the type will then be serialized, and no attributes will be required.
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.ThrowInvalidDataContractException(String message, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.GetDataContractSkipValidation(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.GetDataContract(RuntimeTypeHandle typeHandle, Type type, SerializationMode mode)
+   at System.Runtime.Serialization.ClassDataContract.ClassDataContractCriticalHelper..ctor(Type type)
+   at System.Runtime.Serialization.ClassDataContract..ctor(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.CreateDataContract(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.DataContractCriticalHelper.GetDataContractSkipValidation(Int32 id, RuntimeTypeHandle typeHandle, Type type)
+   at System.Runtime.Serialization.DataContract.GetDataContract(RuntimeTypeHandle typeHandle, Type type, SerializationMode mode)
+   at System.Runtime.Serialization.XsdDataContractExporter.GetRootElementName(Type type)
+   at Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter.CreateSerializer(Type type)
+2022-07-11 20:49:24.878 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-11 20:49:24.896 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 118.341ms
+2022-07-11 20:49:24.901 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-11 20:49:24.905 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/companies - - - 200 - application/json;+charset=utf-8 149.9156ms
+2022-07-11 21:14:29.623 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-11 21:14:29.710 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-11 21:14:29.713 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-11 21:14:29.714 +03:00 [INF] Hosting environment: Development
+2022-07-11 21:14:29.716 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-11 21:14:30.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/weatherforecast - -
+2022-07-11 21:14:30.983 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 21:14:31.068 +03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[System.String] Get() on controller BurhanSample.API.Controllers.WeatherForecastController (BurhanSample.API).
+2022-07-11 21:14:31.087 +03:00 [INF] Here is info message from our values controller.
+2022-07-11 21:14:31.091 +03:00 [WRN] Here is warn message from our values controller.
+2022-07-11 21:14:31.097 +03:00 [ERR] Here is an error message from our values controller.
+2022-07-11 21:14:31.123 +03:00 [INF] Executing ObjectResult, writing value of type 'System.String[]'.
+2022-07-11 21:14:31.211 +03:00 [INF] Executed action BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API) in 117.8351ms
+2022-07-11 21:14:31.219 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.WeatherForecastController.Get (BurhanSample.API)'
+2022-07-11 21:14:31.230 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/weatherforecast - - - 200 - application/json;+charset=utf-8 392.5546ms
+2022-07-11 21:14:31.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-11 21:14:31.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 404 0 - 6.4844ms
+2022-07-11 21:15:57.655 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/api/companies application/json 82
+2022-07-11 21:15:57.658 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API)'
+2022-07-11 21:15:57.674 +03:00 [INF] Route matched with {action = "CreateCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateCompany(BurhanSample.Entities.Dto.CompanyForCreationDto) on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-11 21:16:00.401 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-11 21:16:03.172 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 60), @p2='?' (Size = 4000), @p3='?' (Size = 60)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Companies] ([CompanyId], [Address], [Country], [Name])
+VALUES (@p0, @p1, @p2, @p3);
+2022-07-11 21:16:03.297 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-11 21:16:03.402 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API) in 5724.2054ms
+2022-07-11 21:16:03.408 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API)'
+2022-07-11 21:16:03.422 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:5001/api/companies application/json 82 - 201 - application/json;+charset=utf-8 5766.8900ms

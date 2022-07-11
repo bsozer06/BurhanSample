@@ -12,5 +12,6 @@ namespace BurhanSample.DAL.Abstract
     {
         IEnumerable<Company> GetAllCompanies(bool trackChanges);
         Company GetCompany(Guid companyId, bool trackChanges);
+        void CreateCompany(Company company);
     }
 }

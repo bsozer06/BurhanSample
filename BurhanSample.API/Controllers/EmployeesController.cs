@@ -6,9 +6,7 @@ using System;
 
 namespace BurhanSample.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EmployeesController : ControllerBase
+    public class EmployeesController : BaseApiController
     {
         private IEmployeeManager _manager;
         private readonly ILoggerManager _logger;
