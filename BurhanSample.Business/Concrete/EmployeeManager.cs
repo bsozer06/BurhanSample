@@ -1,10 +1,13 @@
 ﻿using AutoMapper;
 using BurhanSample.Business.Abstract;
+using BurhanSample.Business.ValidationRules;
+using BurhanSample.Business.ValidationRules.FluentValidation;
 using BurhanSample.Core.Services.Abstract;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.Dto;
 using Core.Utilities.Results;
+using FluentValidation;
 using System;
 using System.Collections.Generic;
 
@@ -62,6 +65,11 @@ namespace BurhanSample.Business.Concrete
 
         public IDataResult<EmployeeDto> CreateEmployeeForCompany(Guid companyId, EmployeeForCreationDto employee)
         {
+            var validator = new EmployeeForCreationValidator();
+            var validationResult = validator.Validate(employee);
+            if (!validationResult.IsValid)
+                throw new ValidationException(validationResult.Errors);
+
             if (employee == null) 
             { 
                 _logger.LogError("EmployeeForCreationDto object sent from client is null."); 
@@ -109,6 +117,11 @@ namespace BurhanSample.Business.Concrete
 
         public IDataResult<EmployeeDto> UpdateEmployeeForCompany(Guid companyId, Guid id, EmployeeForUpdateDto employee)
         {
+            var validator = new EmployeeForUpdateValidator();
+            var validationResult = validator.Validate(employee);
+            if (!validationResult.IsValid)
+                throw new ValidationException(validationResult.Errors);
+
             if (employee == null) {
                 _logger.LogError("EmployeeForUpdateDto object sent from client is null.");
                 return new ErrorDataResult<EmployeeDto>("EmployeeForUpdateDto object is null");
@@ -133,5 +146,7 @@ namespace BurhanSample.Business.Concrete
 
             return new SuccessDataResult<EmployeeDto>();
         }
+
+        
     }
 }

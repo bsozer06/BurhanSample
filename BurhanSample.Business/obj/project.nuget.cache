@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "bs5feGK+QD8TirEp+jaoZ7WDDzMMFxUfR0Fz6Hsw3vwXJm6rEDzt4TLCYAcobxEPgiLrCIOtZgG2AamIiGedTg==",
+  "dgSpecHash": "L0RwWt94BJLis2Bz62wHLBrWkigaKrPDLJUde1DIriO/sN/cNfUM6bdViTGhahXikXIGEGuyD25jv4Ace2c8Gg==",
   "success": true,
   "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Business\\BurhanSample.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\furka\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.diagnostics.abstractions\\2.2.0\\microsoft.aspnetcore.diagnostics.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

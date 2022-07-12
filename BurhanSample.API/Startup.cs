@@ -1,4 +1,5 @@
 using BurhanSample.API.Extensions;
+using BurhanSample.Business.ValidationRules;
 using BurhanSample.Core.Extensions;
 using BurhanSample.DataAccess.Mapping.Profiles;
 using Microsoft.AspNetCore.Builder;
@@ -35,6 +36,17 @@ namespace BurhanSample.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            #region for ModelState : Bad request'ler 500 hatasý olarak gozukmemesi icin
+
+            //services.Configure<ApiBehaviorOptions>(options =>
+            //{
+            //    options.SuppressModelStateInvalidFilter = true;
+            //});
+
+            #endregion
+
+
             services.AddAutoMapper(typeof(MappingProfile));         /// **** typeof(Startup) olmuyor. !
 
             services.ConfigureCors();

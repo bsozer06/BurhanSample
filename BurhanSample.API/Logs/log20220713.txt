@@ -1,0 +1,60 @@
+2022-07-13 00:28:17.927 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 00:28:18.004 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 00:28:18.007 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 00:28:18.009 +03:00 [INF] Hosting environment: Development
+2022-07-13 00:28:18.011 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 00:28:19.016 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 00:28:19.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 394.5666ms
+2022-07-13 00:28:19.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 00:28:19.577 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.3458ms
+2022-07-13 00:28:19.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 00:28:20.156 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 245.0137ms
+2022-07-13 00:29:51.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees/5555 - -
+2022-07-13 00:29:51.805 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 00:29:51.862 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployees(System.Guid) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 00:29:54.319 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 00:29:57.385 +03:00 [INF] Executed DbCommand (84ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 00:29:57.440 +03:00 [INF] Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2022-07-13 00:29:57.468 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.ErrorDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 00:29:57.522 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 5629.3009ms
+2022-07-13 00:29:57.531 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 00:29:57.575 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees/5555 - - - 200 - application/json;+charset=utf-8 5835.7777ms
+2022-07-13 00:30:16.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees/5555 - -
+2022-07-13 00:30:16.069 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 00:30:16.072 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEmployees(System.Guid) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 00:30:16.122 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 00:30:16.136 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 00:30:16.147 +03:00 [INF] Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2022-07-13 00:30:16.150 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.ErrorDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 00:30:16.160 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 82.83ms
+2022-07-13 00:30:16.171 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 00:30:16.180 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees/5555 - - - 200 - application/json;+charset=utf-8 115.6158ms
+2022-07-13 00:30:43.620 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees application/json 67
+2022-07-13 00:30:43.631 +03:00 [INF] CORS policy execution successful.
+2022-07-13 00:30:43.635 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 00:30:43.639 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 00:31:07.971 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 00:31:07.979 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 00:31:07.984 +03:00 [INF] Company with id: 00000000-0000-0000-0000-000000000000 doesn't exist in the database.
+2022-07-13 00:31:18.194 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 34548.012ms
+2022-07-13 00:31:18.199 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 00:31:20.429 +03:00 [ERR] ----------------------------------------------------------
+2022-07-13 00:31:20.433 +03:00 [ERR] Something went wrong: Object reference not set to an instance of an object.
+2022-07-13 00:31:20.438 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees application/json 67 - 500 - application/json 36817.3796ms
+2022-07-13 00:31:31.798 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees application/json 47
+2022-07-13 00:31:31.800 +03:00 [INF] CORS policy execution successful.
+2022-07-13 00:31:31.803 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 00:31:31.805 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 00:31:31.813 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-13 00:31:31.826 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 17.3724ms
+2022-07-13 00:31:31.830 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 00:31:31.834 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees application/json 47 - 400 - application/problem+json;+charset=utf-8 36.7747ms
