@@ -14,5 +14,8 @@ namespace BurhanSample.Business.Abstract
         IDataResult<IEnumerable<EmployeeDto>> GetEmployees(Guid companyId, bool trackChanges);
         IDataResult<EmployeeDto> GetEmployee(Guid companyId, Guid id, bool trackChanges);
         IDataResult<EmployeeDto> CreateEmployeeForCompany(Guid companyId, EmployeeForCreationDto employee);
+        IDataResult<EmployeeDto> DeleteEmployeeForCompany(Guid companyId, Guid id);
+        IDataResult<EmployeeDto> UpdateEmployeeForCompany(Guid companyId, Guid id, EmployeeForUpdateDto employee);
+
     }
 }

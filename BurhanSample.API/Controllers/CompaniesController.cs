@@ -17,6 +17,7 @@ namespace BurhanSample.API.Controllers
             _manager = manager;
         }
 
+
         // api/companies
         [HttpGet]
         public IActionResult GetCompanies()
@@ -25,6 +26,7 @@ namespace BurhanSample.API.Controllers
             return Ok(result);
         }
 
+
         // api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3
         [HttpGet("{id}", Name = "CompanyById")]
         public IActionResult GetCompany(Guid id)
@@ -32,6 +34,7 @@ namespace BurhanSample.API.Controllers
             var result = _manager.GetCompany(id);
             return Ok(result);
         }
+
 
         [HttpPost]
         public IActionResult CreateCompany([FromBody] CompanyForCreationDto company)
@@ -48,6 +51,7 @@ namespace BurhanSample.API.Controllers
             return Ok(result);
         }
 
+
         [HttpPost("collection")]
         public IActionResult CreateCompanyCollection([FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
         {
@@ -55,6 +59,24 @@ namespace BurhanSample.API.Controllers
             return CreatedAtRoute("CompanyCollection",
                 new { ids= string.Join(",", result.Data.Select(c => c.Id)) },
                 result);
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCompany(Guid id)
+        {
+            _manager.DeleteCompany(id);
+
+            return NoContent();
+        }
+
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
+        {
+            _manager.UpdateCompany(id, company);
+
+            return NoContent();
         }
 
     }

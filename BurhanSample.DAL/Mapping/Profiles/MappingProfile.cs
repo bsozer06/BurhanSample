@@ -22,6 +22,10 @@ namespace BurhanSample.DataAccess.Mapping.Profiles
             CreateMap<CompanyForCreationDto, Company>();
 
             CreateMap<EmployeeForCreationDto, Employee>();
+
+            CreateMap<EmployeeForUpdateDto, Employee>().ReverseMap();
+
+            CreateMap<CompanyForUpdateDto, Company>();
         }
     }
 }

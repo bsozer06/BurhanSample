@@ -85,5 +85,53 @@ namespace BurhanSample.Business.Concrete
 
         }
 
+        public IDataResult<EmployeeDto> DeleteEmployeeForCompany(Guid companyId, Guid id)
+        {
+           var company = _repository.Company.GetCompany(companyId, false);
+            if (company == null)
+            {
+                _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
+                return new ErrorDataResult<EmployeeDto>("Company object is null");
+            }
+
+            var employeeForCompany = _repository.Employee.GetEmployee(companyId, id, trackChanges: false); 
+            if (employeeForCompany == null) 
+            { 
+                _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
+                return new ErrorDataResult<EmployeeDto>("Employee object is null");
+            }
+
+            _repository.Employee.DeleteEmployee(employeeForCompany);
+            _repository.Save();
+
+            return new SuccessDataResult<EmployeeDto>();
+        }
+
+        public IDataResult<EmployeeDto> UpdateEmployeeForCompany(Guid companyId, Guid id, EmployeeForUpdateDto employee)
+        {
+            if (employee == null) {
+                _logger.LogError("EmployeeForUpdateDto object sent from client is null.");
+                return new ErrorDataResult<EmployeeDto>("EmployeeForUpdateDto object is null");
+            }
+
+            var company = _repository.Company.GetCompany(companyId, trackChanges: false); 
+            if (company == null) 
+            { 
+                _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
+                return new ErrorDataResult<EmployeeDto>("Company object is null");
+            }
+
+            var employeeEntity = _repository.Employee.GetEmployee(companyId, id, trackChanges: true);
+            if (employeeEntity == null) 
+            {
+                _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
+                return new ErrorDataResult<EmployeeDto>("Employee object is null");
+            }
+
+            _mapper.Map(employee, employeeEntity);
+            _repository.Save();
+
+            return new SuccessDataResult<EmployeeDto>();
+        }
     }
 }

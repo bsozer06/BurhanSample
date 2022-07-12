@@ -99,10 +99,43 @@ namespace BurhanSample.Business.Concrete
             _repository.Save();
             
             var companyCollectionToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities); 
-            //var ids = string.Join(",", companyCollectionToReturn.Select(c => c.Id)); 
             
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companyCollectionToReturn);
         }
 
+        public IDataResult<CompanyDto> DeleteCompany(Guid id)
+        {
+            var company = _repository.Company.GetCompany(id, trackChanges: false); 
+            if (company == null) {
+                _logger.LogError("CompanyForCreationDto object sent from client is null.");
+                return new ErrorDataResult<CompanyDto>("CompanyForCreationDto object is null");
+            }
+
+            _repository.Company.DeleteCompany(company); 
+            _repository.Save(); 
+
+            return new SuccessDataResult<CompanyDto>();
+        }
+
+        public IDataResult<CompanyDto> UpdateCompany(Guid id, CompanyForUpdateDto company)
+        {
+            if (company == null)
+            {
+                _logger.LogError("CompanyForUpdateDto object sent from client is null.");
+                return new ErrorDataResult<CompanyDto>("CompanyForUpdateDto object is null");
+            }
+
+            var companyEntity = _repository.Company.GetCompany(id, trackChanges: true);
+            if (companyEntity == null)
+            {
+                _logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
+                return new ErrorDataResult<CompanyDto>("Company entity object is null");
+            }
+
+            _mapper.Map(company, companyEntity);
+            _repository.Save();
+
+            return new SuccessDataResult<CompanyDto>();
+        }
     }
 }

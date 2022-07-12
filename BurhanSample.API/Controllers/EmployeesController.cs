@@ -15,26 +15,36 @@ namespace BurhanSample.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetEmployeeForCompany(Guid companyId, Guid id)
+        public IActionResult GetEmployee(Guid companyId, Guid id)
         {
             var result = _manager.GetEmployee(companyId, id, false);
             return Ok(result);
         }
 
         // api/employees
-        [HttpGet("{id}", Name = "GetEmployeeForCompany")]
-        public IActionResult GetEmployeesForCompany(Guid companyId)
+        [HttpGet("{id}", Name = "GetEmployee")]
+        public IActionResult GetEmployees(Guid companyId)
         {
             var result = _manager.GetEmployees(companyId, false);
             return Ok(result);
         }
 
-        /// calismiyor
+        // calismayabilir.
         [HttpPost]
-        public IActionResult CreateEmployeeForCompany(Guid companyId, [FromBody] EmployeeForCreationDto employee)
+        public IActionResult CreateEmployee(Guid companyId, [FromBody] EmployeeForCreationDto employee)
         {
             var result = _manager.CreateEmployeeForCompany(companyId, employee);
-            return CreatedAtRoute("GetEmployeeForCompany", new { companyId, id = result.Data.Id}, result.Data);
+            return CreatedAtRoute("GetEmployee", new { companyId, id = result.Data.Id }, result.Data);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteEmployee(Guid companyId, Guid id)
+        {
+            var result = _manager.DeleteEmployeeForCompany(companyId, id);
+            return NoContent();
+        }
+
+
+
     }
 }

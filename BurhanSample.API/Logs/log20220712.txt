@@ -119,3 +119,91 @@ WHERE [c].[CompanyId] IN ('8a5a67c2-00e6-44ce-2924-08da63899cc9', 'da7f8189-0219
 2022-07-12 01:13:04.580 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanyCollection (BurhanSample.API) in 338027.3711ms
 2022-07-12 01:13:04.584 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanyCollection (BurhanSample.API)'
 2022-07-12 01:13:04.589 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/api/Companies/collection/(8a5a67c2-00e6-44ce-2924-08da63899cc9,da7f8189-0219-477d-2925-08da63899cc9) application/json 65 - 200 - application/json;+charset=utf-8 338068.1548ms
+2022-07-12 18:05:18.514 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-12 18:05:18.601 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-12 18:05:18.605 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-12 18:05:18.606 +03:00 [INF] Hosting environment: Development
+2022-07-12 18:05:18.609 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-12 18:05:20.655 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-12 18:05:21.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 548.7291ms
+2022-07-12 18:05:21.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-12 18:05:21.308 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.5200ms
+2022-07-12 18:05:21.590 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-12 18:05:21.868 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 277.5086ms
+2022-07-12 20:46:58.956 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-12 20:46:59.009 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-12 20:46:59.011 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-12 20:46:59.013 +03:00 [INF] Hosting environment: Development
+2022-07-12 20:46:59.015 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-12 20:46:59.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-12 20:47:00.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-12 20:47:00.229 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 267.9099ms
+2022-07-12 20:47:00.244 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.3149ms
+2022-07-12 20:47:00.521 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-12 20:47:00.693 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.2268ms
+2022-07-12 20:47:10.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Companies - -
+2022-07-12 20:47:10.667 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:47:10.699 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-12 20:47:12.188 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-12 20:47:14.838 +03:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-12 20:47:14.893 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-12 20:47:14.913 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 4205.4816ms
+2022-07-12 20:47:14.917 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:47:14.926 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Companies - - - 200 - application/json;+charset=utf-8 4313.8756ms
+2022-07-12 20:48:03.630 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:5001/api/Companies/da7f8189-0219-477d-2925-08da63899cc9 - -
+2022-07-12 20:48:03.642 +03:00 [INF] CORS policy execution successful.
+2022-07-12 20:48:03.646 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.DeleteCompany (BurhanSample.API)'
+2022-07-12 20:48:03.658 +03:00 [INF] Route matched with {action = "DeleteCompany", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteCompany(System.Guid) on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-12 20:48:03.725 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-12 20:48:04.069 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-12 20:48:04.219 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Companies]
+WHERE [CompanyId] = @p0;
+SELECT @@ROWCOUNT;
+2022-07-12 20:48:04.246 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 204
+2022-07-12 20:48:04.250 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.DeleteCompany (BurhanSample.API) in 587.8408ms
+2022-07-12 20:48:04.254 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.DeleteCompany (BurhanSample.API)'
+2022-07-12 20:48:04.258 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:5001/api/Companies/da7f8189-0219-477d-2925-08da63899cc9 - - - 204 - - 632.6720ms
+2022-07-12 20:48:17.074 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Companies - -
+2022-07-12 20:48:17.077 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:17.080 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-12 20:48:17.099 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-12 20:48:17.111 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-12 20:48:17.115 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-12 20:48:17.119 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 33.3466ms
+2022-07-12 20:48:17.122 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:17.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Companies - - - 200 - application/json;+charset=utf-8 49.9726ms
+2022-07-12 20:48:18.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Companies - -
+2022-07-12 20:48:18.417 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:18.420 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-12 20:48:18.424 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-12 20:48:18.428 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-12 20:48:18.431 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-12 20:48:18.433 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 9.107ms
+2022-07-12 20:48:18.437 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:18.439 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Companies - - - 200 - application/json;+charset=utf-8 23.7712ms
+2022-07-12 20:48:29.117 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Companies - -
+2022-07-12 20:48:29.119 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:29.122 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompanies() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-12 20:48:29.128 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-12 20:48:29.132 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-12 20:48:29.136 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.CompanyDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-12 20:48:29.140 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API) in 12.5ms
+2022-07-12 20:48:29.149 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompanies (BurhanSample.API)'
+2022-07-12 20:48:29.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Companies - - - 200 - application/json;+charset=utf-8 33.6945ms
