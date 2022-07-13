@@ -5,6 +5,7 @@ using BurhanSample.Core.Extensions;
 using BurhanSample.DataAccess.Mapping.Profiles;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -62,6 +63,9 @@ namespace BurhanSample.API
 
 
             services.AddControllers();
+            services.AddHttpContextAccessor();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
             services.AddSwaggerGen(c =>
             {

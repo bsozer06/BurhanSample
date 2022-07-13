@@ -1,6 +1,9 @@
-﻿using BurhanSample.DAL.Abstract;
+﻿using BurhanSample.Core.Utilities.Models.RequestFeatures;
+using BurhanSample.DAL.Abstract;
 using BurhanSample.DAL.Concrete.EntityFramework.Context;
 using BurhanSample.Entities.Concrete;
+using BurhanSample.Entities.RequestFeatures;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +18,23 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
         {
         }
 
-        public Employee GetEmployee(Guid companyId, Guid id, bool trackChanges)
+        public async Task<Employee> GetEmployeeAsync(Guid companyId, Guid id, bool trackChanges)
         {
-            return GetEmployee(companyId, id, trackChanges);
+            return await GetEmployeeAsync(companyId, id, trackChanges);
         }
 
-        public IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges) =>
-                GetByCondition(e => e.CompanyId == companyId, trackChanges).OrderBy(e => e.Name);
+        public async Task<PagedList<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
+        {
+            var employees = await GetByCondition(e => e.CompanyId == companyId, trackChanges)
+                         .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
+                         .Take(employeeParameters.PageSize)
+                         .OrderBy(e => e.Name)
+                         .ToListAsync();
+
+            var count = await GetByCondition(e => e.CompanyId == companyId, trackChanges).CountAsync();
+
+            return PagedList<Employee>.ToPagedList(employees, employeeParameters.PageNumber, employeeParameters.PageSize, count);
+        }
 
         public void CreateEmployeeForCompany(Guid companyId, Employee employee)
         {
@@ -29,9 +42,7 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
             Create(employee);
         }
 
-        public void DeleteEmployee(Employee employee)
-        {
-            Delete(employee);
-        }
+        public void DeleteEmployee(Employee employee) => Delete(employee);
+        
     }
 }

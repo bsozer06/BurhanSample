@@ -14,15 +14,15 @@ namespace BurhanSample.Business.ValidationRules.FluentValidation
         {
             RuleFor(e => e.Name)
                 .NotEmpty()
-                .MaximumLength(30);
+                .MaximumLength(50);
 
             RuleFor(e => e.Age)
                 .NotEmpty()
-                .InclusiveBetween(18, int.MaxValue);
+                .InclusiveBetween(18, 100);
 
             RuleFor(e => e.Position)
                 .NotEmpty()
-                .MaximumLength(20);
+                .MaximumLength(50);
         }
     }
 }

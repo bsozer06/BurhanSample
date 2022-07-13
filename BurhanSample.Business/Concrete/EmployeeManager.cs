@@ -6,10 +6,14 @@ using BurhanSample.Core.Services.Abstract;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.Dto;
+using BurhanSample.Entities.RequestFeatures;
 using Core.Utilities.Results;
 using FluentValidation;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace BurhanSample.Business.Concrete
 {
@@ -18,39 +22,45 @@ namespace BurhanSample.Business.Concrete
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        private readonly IHttpContextAccessor httpContext;
 
-        public EmployeeManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public EmployeeManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IHttpContextAccessor HttpContext)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            httpContext = HttpContext;
         }
 
-        public IDataResult<IEnumerable<EmployeeDto>> GetEmployees(Guid companyId, bool trackChanges)
+        public async Task<IDataResult<IEnumerable<EmployeeDto>>> GetEmployees(Guid companyId, EmployeeParameters employeeParameters)
         {
-            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
+            var company = await _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
                 return new ErrorDataResult<IEnumerable<EmployeeDto>>("Company object is null");
             }
 
-            var employees = _repository.Employee.GetEmployees(companyId, trackChanges: false);
+            var employees = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges: false);
+
+            /// add headers info about the pagination parameters
+            httpContext.HttpContext.Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(employees.MetaData));
+
             var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
 
             return new SuccessDataResult<IEnumerable<EmployeeDto>>(employeesDto);
         }
 
-        public IDataResult<EmployeeDto> GetEmployee(Guid companyId, Guid id, bool trackChanges)
+        public async Task<IDataResult<EmployeeDto>> GetEmployee(Guid companyId, Guid id)
         {
-            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
+            var company = await _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
                 return new ErrorDataResult<EmployeeDto>("Company object is null");
             }
 
-            var employee = _repository.Employee.GetEmployee(companyId, id, trackChanges: false);
+            var employee = await _repository.Employee.GetEmployeeAsync(companyId, id, trackChanges: false);
             if (employee == null)
             {
                 _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
@@ -63,7 +73,7 @@ namespace BurhanSample.Business.Concrete
 
         }
 
-        public IDataResult<EmployeeDto> CreateEmployeeForCompany(Guid companyId, EmployeeForCreationDto employee)
+        public async Task<IDataResult<EmployeeDto>> CreateEmployeeForCompany(Guid companyId, EmployeeForCreationDto employee)
         {
             var validator = new EmployeeForCreationValidator();
             var validationResult = validator.Validate(employee);
@@ -76,7 +86,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<EmployeeDto>("EmployeeForCreationDto object is null");
             }
 
-            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
+            var company = await _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null) 
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -85,7 +95,7 @@ namespace BurhanSample.Business.Concrete
 
             var employeeEntity = _mapper.Map<Employee>(employee); 
             _repository.Employee.CreateEmployeeForCompany(companyId, employeeEntity);
-            _repository.SaveAsync();
+            await _repository.SaveAsync();
 
             var employeeToReturn = _mapper.Map<EmployeeDto>(employeeEntity);
 
@@ -93,7 +103,7 @@ namespace BurhanSample.Business.Concrete
 
         }
 
-        public IDataResult<EmployeeDto> DeleteEmployeeForCompany(Guid companyId, Guid id)
+        public async Task<IDataResult<EmployeeDto>> DeleteEmployeeForCompany(Guid companyId, Guid id)
         {
            var company = _repository.Company.GetCompanyAsync(companyId, false);
             if (company == null)
@@ -102,7 +112,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<EmployeeDto>("Company object is null");
             }
 
-            var employeeForCompany = _repository.Employee.GetEmployee(companyId, id, trackChanges: false); 
+            var employeeForCompany = await _repository.Employee.GetEmployeeAsync(companyId, id, trackChanges: false); 
             if (employeeForCompany == null) 
             { 
                 _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
@@ -110,7 +120,7 @@ namespace BurhanSample.Business.Concrete
             }
 
             _repository.Employee.DeleteEmployee(employeeForCompany);
-            _repository.SaveAsync();
+            await _repository.SaveAsync();
 
             return new SuccessDataResult<EmployeeDto>();
         }
@@ -134,7 +144,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<EmployeeDto>("Company object is null");
             }
 
-            var employeeEntity = _repository.Employee.GetEmployee(companyId, id, trackChanges: true);
+            var employeeEntity = _repository.Employee.GetEmployeeAsync(companyId, id, trackChanges: true);
             if (employeeEntity == null) 
             {
                 _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");

@@ -1,4 +1,6 @@
-﻿using BurhanSample.Entities.Concrete;
+﻿using BurhanSample.Core.Utilities.Models.RequestFeatures;
+using BurhanSample.Entities.Concrete;
+using BurhanSample.Entities.RequestFeatures;
 using Core.DAL;
 using System;
 using System.Collections.Generic;
@@ -10,8 +12,8 @@ namespace BurhanSample.DAL.Abstract
 {
     public interface IEmployeeRepository: IRepositoryBase<Employee>
     {
-        IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges);
-        Employee GetEmployee(Guid companyId, Guid id, bool trackChanges);
+        Task<PagedList<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges);
+        Task<Employee> GetEmployeeAsync(Guid companyId, Guid id, bool trackChanges);
         void CreateEmployeeForCompany(Guid companyId, Employee employee);
         void DeleteEmployee(Employee employee);
     }

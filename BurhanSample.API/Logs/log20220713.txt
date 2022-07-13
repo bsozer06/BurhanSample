@@ -532,3 +532,703 @@ VALUES (@p4, @p5, @p6, @p7, @p8);
 2022-07-13 22:06:01.307 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API) in 27.4465ms
 2022-07-13 22:06:01.315 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.CreateCompany (BurhanSample.API)'
 2022-07-13 22:06:01.322 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Companies application/json 4 - 400 - application/problem+json;+charset=utf-8 63.2501ms
+2022-07-13 22:46:26.108 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 22:46:26.320 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 22:46:26.323 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 22:46:26.325 +03:00 [INF] Hosting environment: Development
+2022-07-13 22:46:26.327 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 22:46:27.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 22:46:27.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 22:46:27.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 349.1995ms
+2022-07-13 22:46:27.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.3857ms
+2022-07-13 22:46:28.095 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 22:46:28.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 265.8002ms
+2022-07-13 22:47:07.027 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69
+2022-07-13 22:47:07.061 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:47:07.181 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:07.298 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:47:10.799 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:47:12.614 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:47:12.681 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:47:12.831 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 5497.7456ms
+2022-07-13 22:47:12.850 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:12.900 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69 - 201 - application/json;+charset=utf-8 5872.9132ms
+2022-07-13 22:47:12.912 +03:00 [ERR] An error occurred using the connection to database 'CompanyEmployees' on server '(localdb)\MSSQLLocalDB'.
+2022-07-13 22:47:12.944 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-07-13 22:47:31.949 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 70
+2022-07-13 22:47:31.953 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:47:31.960 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:31.964 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:47:32.052 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:47:32.176 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:47:32.212 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:47:32.219 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 250.2137ms
+2022-07-13 22:47:32.229 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:32.248 +03:00 [INF] Executed DbCommand (131ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:47:32.266 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 70 - 201 - application/json;+charset=utf-8 317.8453ms
+2022-07-13 22:47:32.284 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'RepositoryContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Microsoft.EntityFrameworkCore.Internal.IDbContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContextDependencies.get_StateManager()
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.InitializeStateManager(Boolean standAlone)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-07-13 22:47:40.450 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69
+2022-07-13 22:47:40.454 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:47:40.457 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:40.459 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:47:40.488 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:47:40.507 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:47:40.510 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:47:40.556 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:47:40.561 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 97.1965ms
+2022-07-13 22:47:40.568 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:40.572 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69 - 201 - application/json;+charset=utf-8 122.8155ms
+2022-07-13 22:47:47.627 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68
+2022-07-13 22:47:47.632 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:47:47.638 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:47.641 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:47:47.650 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:47:47.661 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:47:47.666 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:47:47.695 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:47:47.700 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 51.6772ms
+2022-07-13 22:47:47.709 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:47.715 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68 - 201 - application/json;+charset=utf-8 88.2652ms
+2022-07-13 22:47:53.795 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72
+2022-07-13 22:47:53.799 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:47:53.801 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:53.804 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:47:53.810 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:47:53.817 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:47:53.820 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:47:53.846 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:47:53.850 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 40.837ms
+2022-07-13 22:47:53.857 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:47:53.862 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72 - 201 - application/json;+charset=utf-8 67.6628ms
+2022-07-13 22:48:00.300 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 22:48:00.303 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:48:00.305 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:48:00.307 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:48:00.314 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:48:00.321 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:48:00.324 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:48:00.344 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:48:00.349 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 35.8656ms
+2022-07-13 22:48:00.353 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:48:00.357 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 56.7933ms
+2022-07-13 22:51:52.704 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 22:51:52.778 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 22:51:52.780 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 22:51:52.782 +03:00 [INF] Hosting environment: Development
+2022-07-13 22:51:52.783 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 22:51:54.488 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 22:51:54.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 22:51:54.890 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 408.0606ms
+2022-07-13 22:51:54.894 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 6.2423ms
+2022-07-13 22:51:55.286 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 22:51:55.516 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 230.6107ms
+2022-07-13 22:52:56.212 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 22:52:56.229 +03:00 [INF] CORS policy execution successful.
+2022-07-13 22:52:56.320 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:52:56.418 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:52:59.372 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:53:00.487 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 22:53:00.548 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 22:53:00.677 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 4237.2022ms
+2022-07-13 22:53:00.687 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 22:53:00.755 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 4543.1930ms
+2022-07-13 22:53:00.807 +03:00 [ERR] Failed executing DbCommand (38ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:53:00.836 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: BeginExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: BeginExecuteReader requires an open and available Connection. The connection's current state is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-07-13 22:56:48.002 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 22:56:48.100 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 22:56:48.105 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 22:56:48.109 +03:00 [INF] Hosting environment: Development
+2022-07-13 22:56:48.113 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 22:56:49.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 22:56:49.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 365.1864ms
+2022-07-13 22:56:49.956 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 22:56:49.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.8912ms
+2022-07-13 22:56:50.209 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 22:56:50.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 227.0491ms
+2022-07-13 22:57:03.996 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 22:57:04.103 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 22:57:04.107 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 22:57:04.109 +03:00 [INF] Hosting environment: Development
+2022-07-13 22:57:04.111 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 22:57:05.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 22:57:05.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 22:57:05.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 418.5115ms
+2022-07-13 22:57:05.784 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.1675ms
+2022-07-13 22:57:06.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 22:57:06.354 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.0940ms
+2022-07-13 22:58:40.584 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 22:58:40.670 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 22:58:40.672 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 22:58:40.674 +03:00 [INF] Hosting environment: Development
+2022-07-13 22:58:40.676 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 22:58:42.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 22:58:42.595 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 22:58:42.600 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 392.3221ms
+2022-07-13 22:58:42.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.3721ms
+2022-07-13 22:58:43.014 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 22:58:43.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.8359ms
+2022-07-13 22:59:15.947 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - -
+2022-07-13 22:59:16.076 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 22:59:16.239 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 22:59:27.409 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 22:59:30.770 +03:00 [INF] Executed DbCommand (118ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 22:59:30.937 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ORDER BY [e].[Name]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2022-07-13 22:59:31.012 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 22:59:31.039 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 14780.1311ms
+2022-07-13 22:59:31.043 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 22:59:31.049 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 15103.1069ms
+2022-07-13 23:00:51.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=0&PageSize=2 - -
+2022-07-13 23:00:51.870 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:00:51.875 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:00:51.937 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:00:51.951 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:00:51.967 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ORDER BY [e].[Name]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2022-07-13 23:00:52.076 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](AAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:35dda36a-fe37-41ee-81f5-13678840ee84
+Error Number:10742,State:1,Class:15
+Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](AAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:35dda36a-fe37-41ee-81f5-13678840ee84
+Error Number:10742,State:1,Class:15
+2022-07-13 23:00:52.933 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 1045.3211ms
+2022-07-13 23:00:52.942 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:00:53.410 +03:00 [ERR] ----------------------------------------------------------
+2022-07-13 23:00:53.415 +03:00 [ERR] Something went wrong: The offset specified in a OFFSET clause may not be negative.
+2022-07-13 23:00:53.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=0&PageSize=2 - - - 500 - application/json 1561.5112ms
+2022-07-13 23:00:59.410 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=1&PageSize=2 - -
+2022-07-13 23:00:59.416 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:00:59.421 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:00:59.453 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:00:59.472 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:00:59.513 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ORDER BY [e].[Name]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2022-07-13 23:00:59.533 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 23:00:59.555 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 127.1009ms
+2022-07-13 23:00:59.562 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:00:59.567 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=1&PageSize=2 - - - 200 - application/json;+charset=utf-8 156.6993ms
+2022-07-13 23:01:46.616 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69
+2022-07-13 23:01:46.625 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:01:46.628 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:01:46.633 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:01:46.708 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:01:46.713 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:01:46.969 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-07-13 23:01:46.981 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:01:47.030 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 394.0199ms
+2022-07-13 23:01:47.034 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:01:47.037 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69 - 201 - application/json;+charset=utf-8 421.4163ms
+2022-07-13 23:02:04.778 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 70
+2022-07-13 23:02:04.783 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:02:04.787 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:04.794 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:02:04.816 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:02:04.829 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:02:04.844 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:02:04.867 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:02:04.873 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 60.4925ms
+2022-07-13 23:02:04.880 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:04.884 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 70 - 201 - application/json;+charset=utf-8 106.7566ms
+2022-07-13 23:02:10.683 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69
+2022-07-13 23:02:10.687 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:02:10.690 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:10.694 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:02:10.700 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:02:10.708 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:02:10.711 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:02:10.734 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:02:10.739 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 39.7726ms
+2022-07-13 23:02:10.742 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:10.745 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69 - 201 - application/json;+charset=utf-8 62.0338ms
+2022-07-13 23:02:15.851 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68
+2022-07-13 23:02:15.854 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:02:15.857 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:15.859 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:02:15.867 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:02:15.872 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:02:15.874 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:02:15.891 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:02:15.894 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 28.577ms
+2022-07-13 23:02:15.898 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:15.900 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68 - 201 - application/json;+charset=utf-8 49.3420ms
+2022-07-13 23:02:20.772 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72
+2022-07-13 23:02:20.775 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:02:20.778 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:20.781 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:02:20.788 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:02:20.797 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:02:20.799 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:02:20.826 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:02:20.831 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 44.5718ms
+2022-07-13 23:02:20.836 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:20.839 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72 - 201 - application/json;+charset=utf-8 67.2206ms
+2022-07-13 23:02:27.667 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 23:02:27.669 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:02:27.672 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:27.674 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:02:27.679 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:02:27.686 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:02:27.688 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:02:27.703 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:02:27.707 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 28.0685ms
+2022-07-13 23:02:27.710 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:02:27.712 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 45.7571ms
+2022-07-13 23:03:08.889 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 23:03:08.892 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:03:08.896 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:03:08.900 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:03:08.910 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:03:08.916 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:03:08.918 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:03:08.947 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:03:08.954 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 45.2195ms
+2022-07-13 23:03:08.958 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:03:08.961 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 72.7623ms
+2022-07-13 23:03:12.780 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 23:03:12.783 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:03:12.786 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:03:12.790 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:03:12.795 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:03:12.800 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:03:12.803 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BurhanSample.DAL.Concrete.EntityFramework.Context.RepositoryContext'.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-07-13 23:03:12.824 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:03:12.828 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 34.169ms
+2022-07-13 23:03:12.831 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:03:12.834 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 54.5967ms
+2022-07-13 23:04:30.447 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 23:04:30.449 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:04:30.452 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:04:30.455 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:04:38.804 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:15:29.450 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-13 23:15:29.556 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-13 23:15:29.558 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-13 23:15:29.560 +03:00 [INF] Hosting environment: Development
+2022-07-13 23:15:29.561 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-13 23:15:31.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-13 23:15:31.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 456.9944ms
+2022-07-13 23:15:31.844 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-13 23:15:31.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.7345ms
+2022-07-13 23:15:32.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-13 23:15:32.389 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 220.1326ms
+2022-07-13 23:20:23.830 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67
+2022-07-13 23:20:23.853 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:20:23.968 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:24.085 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:20:30.040 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:20:31.396 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:20:32.000 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-07-13 23:20:32.113 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:20:32.238 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 8133.4311ms
+2022-07-13 23:20:32.245 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:32.285 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 67 - 201 - application/json;+charset=utf-8 8455.6346ms
+2022-07-13 23:20:47.924 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72
+2022-07-13 23:20:47.932 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:20:47.941 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:47.946 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:20:48.031 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:20:48.047 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:20:48.062 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-07-13 23:20:48.071 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:20:48.077 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 112.0148ms
+2022-07-13 23:20:48.090 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:48.096 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 72 - 201 - application/json;+charset=utf-8 171.6820ms
+2022-07-13 23:20:59.397 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68
+2022-07-13 23:20:59.404 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:20:59.408 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:59.413 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:20:59.455 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:20:59.472 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:20:59.489 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-07-13 23:20:59.508 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:20:59.513 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 88.9176ms
+2022-07-13 23:20:59.519 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:20:59.524 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 68 - 201 - application/json;+charset=utf-8 126.7756ms
+2022-07-13 23:21:22.475 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69
+2022-07-13 23:21:22.480 +03:00 [INF] CORS policy execution successful.
+2022-07-13 23:21:22.483 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:21:22.488 +03:00 [INF] Route matched with {action = "CreateEmployee", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateEmployee(System.Guid, BurhanSample.Entities.Dto.EmployeeForCreationDto) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:21:22.498 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:21:22.510 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:21:22.538 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (Size = 30), @p4='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeId], [Age], [CompanyId], [Name], [Position])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2022-07-13 23:21:22.559 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'BurhanSample.Entities.Dto.EmployeeDto'.
+2022-07-13 23:21:22.566 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API) in 68.8974ms
+2022-07-13 23:21:22.582 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.CreateEmployee (BurhanSample.API)'
+2022-07-13 23:21:22.587 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870 application/json 69 - 201 - application/json;+charset=utf-8 112.0699ms
+2022-07-13 23:21:54.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - -
+2022-07-13 23:21:54.368 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:21:54.381 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:21:54.401 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:21:54.413 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:21:54.461 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ORDER BY [e].[Name]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2022-07-13 23:21:54.495 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 23:21:54.508 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 121.0353ms
+2022-07-13 23:21:54.514 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:21:54.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 157.9130ms
+2022-07-13 23:22:00.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=4 - -
+2022-07-13 23:22:00.458 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:22:00.461 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-13 23:22:00.471 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-13 23:22:00.482 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-13 23:22:00.496 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+ORDER BY [e].[Name]
+OFFSET @__p_1 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2022-07-13 23:22:00.506 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-13 23:22:00.514 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 44.4188ms
+2022-07-13 23:22:00.522 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-13 23:22:00.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=4 - - - 200 - application/json;+charset=utf-8 74.6468ms
