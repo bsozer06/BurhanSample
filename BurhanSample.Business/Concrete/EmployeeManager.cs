@@ -28,7 +28,7 @@ namespace BurhanSample.Business.Concrete
 
         public IDataResult<IEnumerable<EmployeeDto>> GetEmployees(Guid companyId, bool trackChanges)
         {
-            var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -43,7 +43,7 @@ namespace BurhanSample.Business.Concrete
 
         public IDataResult<EmployeeDto> GetEmployee(Guid companyId, Guid id, bool trackChanges)
         {
-            var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -76,7 +76,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<EmployeeDto>("EmployeeForCreationDto object is null");
             }
 
-            var company = _repository.Company.GetCompany(companyId, trackChanges: false);
+            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null) 
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -85,7 +85,7 @@ namespace BurhanSample.Business.Concrete
 
             var employeeEntity = _mapper.Map<Employee>(employee); 
             _repository.Employee.CreateEmployeeForCompany(companyId, employeeEntity);
-            _repository.Save();
+            _repository.SaveAsync();
 
             var employeeToReturn = _mapper.Map<EmployeeDto>(employeeEntity);
 
@@ -95,7 +95,7 @@ namespace BurhanSample.Business.Concrete
 
         public IDataResult<EmployeeDto> DeleteEmployeeForCompany(Guid companyId, Guid id)
         {
-           var company = _repository.Company.GetCompany(companyId, false);
+           var company = _repository.Company.GetCompanyAsync(companyId, false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -110,7 +110,7 @@ namespace BurhanSample.Business.Concrete
             }
 
             _repository.Employee.DeleteEmployee(employeeForCompany);
-            _repository.Save();
+            _repository.SaveAsync();
 
             return new SuccessDataResult<EmployeeDto>();
         }
@@ -127,7 +127,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<EmployeeDto>("EmployeeForUpdateDto object is null");
             }
 
-            var company = _repository.Company.GetCompany(companyId, trackChanges: false); 
+            var company = _repository.Company.GetCompanyAsync(companyId, trackChanges: false); 
             if (company == null) 
             { 
                 _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
@@ -142,7 +142,7 @@ namespace BurhanSample.Business.Concrete
             }
 
             _mapper.Map(employee, employeeEntity);
-            _repository.Save();
+            _repository.SaveAsync();
 
             return new SuccessDataResult<EmployeeDto>();
         }

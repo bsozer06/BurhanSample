@@ -14,15 +14,16 @@ namespace BurhanSample.API.Controllers
             _manager = manager;
         }
 
-        [HttpGet]
+        
+        [HttpGet("{id}", Name = "GetEmployee")]
         public IActionResult GetEmployee(Guid companyId, Guid id)
         {
             var result = _manager.GetEmployee(companyId, id, false);
             return Ok(result);
         }
 
+        [HttpGet]
         // api/employees
-        [HttpGet("{id}", Name = "GetEmployee")]
         public IActionResult GetEmployees(Guid companyId)
         {
             var result = _manager.GetEmployees(companyId, false);

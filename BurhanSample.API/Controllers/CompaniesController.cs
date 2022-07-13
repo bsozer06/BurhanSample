@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace BurhanSample.API.Controllers
 {
@@ -20,42 +21,42 @@ namespace BurhanSample.API.Controllers
 
         // api/companies
         [HttpGet]
-        public IActionResult GetCompanies()
+        public async Task<IActionResult> GetCompanies()
         {
-            var result = _manager.GetCompanies();
+            var result = await _manager.GetCompanies();
             return Ok(result);
         }
 
 
         // api/companies/3d490a70-94ce-4d15-9494-5248280c2ce3
         [HttpGet("{id}", Name = "CompanyById")]
-        public IActionResult GetCompany(Guid id)
+        public async Task<IActionResult> GetCompany(Guid id)
         {
-            var result = _manager.GetCompany(id);
+            var result = await _manager.GetCompany(id);
             return Ok(result);
         }
 
 
         [HttpPost]
-        public IActionResult CreateCompany([FromBody] CompanyForCreationDto company)
+        public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto company)
         {
-            var result = _manager.CreateCompany(company);
+            var result = await _manager.CreateCompany(company);
             return CreatedAtRoute("CompanyById", new { id = result.Data.Id }, result);
         }
 
 
         [HttpGet("collection/({ids})", Name = "CompanyCollection")]
-        public IActionResult GetCompanyCollection([ModelBinder(BinderType=typeof(ArrayModelBinder))] IEnumerable<Guid> ids)
+        public async Task<IActionResult> GetCompanyCollection([ModelBinder(BinderType=typeof(ArrayModelBinder))] IEnumerable<Guid> ids)
         {
-            var result = _manager.GetCompanyCollection(ids);
+            var result = await _manager.GetCompanyCollection(ids);
             return Ok(result);
         }
 
 
         [HttpPost("collection")]
-        public IActionResult CreateCompanyCollection([FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
+        public async Task<IActionResult> CreateCompanyCollection([FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
         {
-            var result = _manager.CreateCompanyCollection(companyCollection);
+            var result = await _manager.CreateCompanyCollection(companyCollection);
             return CreatedAtRoute("CompanyCollection",
                 new { ids= string.Join(",", result.Data.Select(c => c.Id)) },
                 result);
@@ -63,18 +64,18 @@ namespace BurhanSample.API.Controllers
 
 
         [HttpDelete("{id}")]
-        public IActionResult DeleteCompany(Guid id)
+        public async Task<IActionResult> DeleteCompany(Guid id)
         {
-            _manager.DeleteCompany(id);
+            await _manager.DeleteCompany(id);
 
             return NoContent();
         }
 
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
+        public async Task<IActionResult> UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
         {
-            _manager.UpdateCompany(id, company);
+            await _manager.UpdateCompany(id, company);
 
             return NoContent();
         }

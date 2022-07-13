@@ -8,6 +8,7 @@ using Core.Utilities.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace BurhanSample.Business.Concrete
 {
@@ -24,18 +25,18 @@ namespace BurhanSample.Business.Concrete
             _mapper = mapper;
         }
 
-        public IDataResult<IEnumerable<CompanyDto>> GetCompanies()
+        public async Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanies()
         {
-            var companies = _repository.Company.GetAllCompanies(trackChanges: false);
+            var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);
             var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesDto);
 
         }
 
-        public IDataResult<CompanyDto> GetCompany(Guid id)
+        public async Task<IDataResult<CompanyDto>> GetCompany(Guid id)
         {
-            var company = _repository.Company.GetCompany(id, false);
+            var company = await _repository.Company.GetCompanyAsync(id, false);
             if (company == null)
             {
                 _logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
@@ -47,7 +48,7 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<CompanyDto>(companyDto);
         }
 
-        public IDataResult<CompanyDto> CreateCompany(CompanyForCreationDto company)
+        public async Task<IDataResult<CompanyDto>> CreateCompany(CompanyForCreationDto company)
         {
             if (company == null)
             {
@@ -58,20 +59,20 @@ namespace BurhanSample.Business.Concrete
             var companyEntity = _mapper.Map<Company>(company);
 
             _repository.Company.CreateCompany(companyEntity);
-            _repository.Save();
+            await _repository.SaveAsync();
 
             var companyToReturn = _mapper.Map<CompanyDto>(companyEntity);
 
             return new SuccessDataResult<CompanyDto>(companyToReturn);
         }
 
-        public IDataResult<IEnumerable<CompanyDto>> GetCompanyCollection(IEnumerable<Guid> ids)
+        public async Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanyCollection(IEnumerable<Guid> ids)
         {
             if (ids == null) { 
                 _logger.LogError("Parameter ids is null"); 
                 return new ErrorDataResult<IEnumerable<CompanyDto>>("Parameter ids is null"); 
             }
-            var companyEntities = _repository.Company.GetByIds(ids, false); 
+            var companyEntities = await _repository.Company.GetByIdsAsync(ids, false); 
 
             if (ids.Count() != companyEntities.Count()) 
             { 
@@ -84,7 +85,7 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesToReturn);
         }
 
-        public IDataResult<IEnumerable<CompanyDto>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection) {
+        public async Task<IDataResult<IEnumerable<CompanyDto>>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection) {
             if (companyCollection == null)
             { 
                 _logger.LogError("Company collection sent from client is null.");
@@ -96,28 +97,28 @@ namespace BurhanSample.Business.Concrete
             {
                 _repository.Company.CreateCompany(company); 
             } 
-            _repository.Save();
+            await _repository.SaveAsync();
             
             var companyCollectionToReturn = _mapper.Map<IEnumerable<CompanyDto>>(companyEntities); 
             
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companyCollectionToReturn);
         }
 
-        public IDataResult<CompanyDto> DeleteCompany(Guid id)
+        public async Task<IDataResult<CompanyDto>> DeleteCompany(Guid id)
         {
-            var company = _repository.Company.GetCompany(id, trackChanges: false); 
+            var company = await _repository.Company.GetCompanyAsync(id, trackChanges: false); 
             if (company == null) {
                 _logger.LogError("CompanyForCreationDto object sent from client is null.");
                 return new ErrorDataResult<CompanyDto>("CompanyForCreationDto object is null");
             }
 
             _repository.Company.DeleteCompany(company); 
-            _repository.Save(); 
+            await _repository.SaveAsync(); 
 
             return new SuccessDataResult<CompanyDto>();
         }
 
-        public IDataResult<CompanyDto> UpdateCompany(Guid id, CompanyForUpdateDto company)
+        public async Task<IDataResult<CompanyDto>> UpdateCompany(Guid id, CompanyForUpdateDto company)
         {
             if (company == null)
             {
@@ -125,7 +126,7 @@ namespace BurhanSample.Business.Concrete
                 return new ErrorDataResult<CompanyDto>("CompanyForUpdateDto object is null");
             }
 
-            var companyEntity = _repository.Company.GetCompany(id, trackChanges: true);
+            var companyEntity = await _repository.Company.GetCompanyAsync(id, trackChanges: true);
             if (companyEntity == null)
             {
                 _logger.LogInfo($"Company with id: {id} doesn't exist in the database.");
@@ -133,7 +134,7 @@ namespace BurhanSample.Business.Concrete
             }
 
             _mapper.Map(company, companyEntity);
-            _repository.Save();
+            await _repository.SaveAsync();
 
             return new SuccessDataResult<CompanyDto>();
         }

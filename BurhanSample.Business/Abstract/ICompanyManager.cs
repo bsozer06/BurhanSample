@@ -10,12 +10,12 @@ namespace BurhanSample.Business.Abstract
 {
     public interface ICompanyManager
     {
-        IDataResult<IEnumerable<CompanyDto>> GetCompanies();
-        IDataResult<CompanyDto> GetCompany(Guid id);
-        IDataResult<CompanyDto> CreateCompany(CompanyForCreationDto company);
-        IDataResult<IEnumerable<CompanyDto>> GetCompanyCollection(IEnumerable<Guid> ids);
-        IDataResult<IEnumerable<CompanyDto>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection);
-        IDataResult<CompanyDto> DeleteCompany(Guid id);
-        IDataResult<CompanyDto> UpdateCompany(Guid id, CompanyForUpdateDto company);
+        Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanies();
+        Task<IDataResult<CompanyDto>> GetCompany(Guid id);
+        Task<IDataResult<CompanyDto>> CreateCompany(CompanyForCreationDto company);
+        Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanyCollection(IEnumerable<Guid> ids);
+        Task<IDataResult<IEnumerable<CompanyDto>>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection);
+        Task<IDataResult<CompanyDto>> DeleteCompany(Guid id);
+        Task<IDataResult<CompanyDto>> UpdateCompany(Guid id, CompanyForUpdateDto company);
     }
 }
