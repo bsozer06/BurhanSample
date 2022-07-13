@@ -1,4 +1,5 @@
 using BurhanSample.API.Extensions;
+using BurhanSample.Business.Filters;
 using BurhanSample.Business.ValidationRules;
 using BurhanSample.Core.Extensions;
 using BurhanSample.DataAccess.Mapping.Profiles;
@@ -55,6 +56,10 @@ namespace BurhanSample.API
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
             services.ConfigureBusinessManager();
+
+            // filters
+            services.AddScoped<ValidationFilterAttribute>();
+
 
             services.AddControllers();
 

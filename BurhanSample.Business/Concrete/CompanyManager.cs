@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using BurhanSample.Business.Abstract;
+using BurhanSample.Business.Filters;
 using BurhanSample.Core.Services.Abstract;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.Dto;
 using Core.Utilities.Results;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +27,7 @@ namespace BurhanSample.Business.Concrete
             _mapper = mapper;
         }
 
+
         public async Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanies()
         {
             var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges: false);
@@ -33,6 +36,7 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesDto);
 
         }
+
 
         public async Task<IDataResult<CompanyDto>> GetCompany(Guid id)
         {
@@ -48,13 +52,17 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<CompanyDto>(companyDto);
         }
 
+        
         public async Task<IDataResult<CompanyDto>> CreateCompany(CompanyForCreationDto company)
         {
-            if (company == null)
-            {
-                _logger.LogError("CompanyForCreationDto object sent from client is null.");
-                return new ErrorDataResult<CompanyDto>("CompanyForCreationDto object is null");
-            }
+            #region ServiceFilter kullanildigi icin gerek kalmadi
+
+            //if (company == null)
+            //{
+            //    _logger.LogError("CompanyForCreationDto object sent from client is null.");
+            //    return new ErrorDataResult<CompanyDto>("CompanyForCreationDto object is null");
+            //}
+            #endregion
 
             var companyEntity = _mapper.Map<Company>(company);
 
@@ -65,6 +73,7 @@ namespace BurhanSample.Business.Concrete
 
             return new SuccessDataResult<CompanyDto>(companyToReturn);
         }
+
 
         public async Task<IDataResult<IEnumerable<CompanyDto>>> GetCompanyCollection(IEnumerable<Guid> ids)
         {
@@ -85,6 +94,7 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companiesToReturn);
         }
 
+
         public async Task<IDataResult<IEnumerable<CompanyDto>>> CreateCompanyCollection(IEnumerable<CompanyForCreationDto> companyCollection) {
             if (companyCollection == null)
             { 
@@ -104,6 +114,7 @@ namespace BurhanSample.Business.Concrete
             return new SuccessDataResult<IEnumerable<CompanyDto>>(companyCollectionToReturn);
         }
 
+
         public async Task<IDataResult<CompanyDto>> DeleteCompany(Guid id)
         {
             var company = await _repository.Company.GetCompanyAsync(id, trackChanges: false); 
@@ -117,6 +128,7 @@ namespace BurhanSample.Business.Concrete
 
             return new SuccessDataResult<CompanyDto>();
         }
+
 
         public async Task<IDataResult<CompanyDto>> UpdateCompany(Guid id, CompanyForUpdateDto company)
         {
@@ -138,5 +150,7 @@ namespace BurhanSample.Business.Concrete
 
             return new SuccessDataResult<CompanyDto>();
         }
+
+
     }
 }

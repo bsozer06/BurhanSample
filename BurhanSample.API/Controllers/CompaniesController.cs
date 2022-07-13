@@ -1,5 +1,6 @@
 ﻿using BurhanSample.API.Helper.ModelBinder;
 using BurhanSample.Business.Abstract;
+using BurhanSample.Business.Filters;
 using BurhanSample.Entities.Dto;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -38,6 +39,7 @@ namespace BurhanSample.API.Controllers
 
 
         [HttpPost]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]          /// ****** Actionresult olan yerde kullanilabiliyor.
         public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto company)
         {
             var result = await _manager.CreateCompany(company);
