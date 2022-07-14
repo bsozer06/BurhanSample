@@ -1,6 +1,7 @@
 ﻿using BurhanSample.Core.Utilities.Models.RequestFeatures;
 using BurhanSample.DAL.Abstract;
 using BurhanSample.DAL.Concrete.EntityFramework.Context;
+using BurhanSample.DataAccess.Concrete.EntityFramework.Extensions;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +24,9 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public async Task<PagedList<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
-            var employees = await GetByCondition(e => e.CompanyId == companyId && e.Age >= employeeParameters.MinAge && e.Age <= employeeParameters.MaxAge, trackChanges)
+            var employees = await GetByCondition(e => e.CompanyId == companyId, trackChanges)
+                         .FilterEmployees(employeeParameters.MinAge, employeeParameters.MaxAge)
+                         .Search(employeeParameters.SearchTerm)
                          .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
                          .Take(employeeParameters.PageSize)
                          .OrderBy(e => e.Name)
