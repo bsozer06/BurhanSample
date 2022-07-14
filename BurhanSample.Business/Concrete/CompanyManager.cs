@@ -16,11 +16,11 @@ namespace BurhanSample.Business.Concrete
 {
     public class CompanyManager : ICompanyManager
     {
-        private readonly IRepositoryManager _repository;
+        private readonly IRepositoryCollection _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
 
-        public CompanyManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public CompanyManager(IRepositoryCollection repository, ILoggerManager logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;

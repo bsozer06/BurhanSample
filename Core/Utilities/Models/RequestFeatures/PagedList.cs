@@ -10,6 +10,7 @@ namespace BurhanSample.Core.Utilities.Models.RequestFeatures
     {
         public MetaData MetaData { get; set; }
 
+        // constructor
         public PagedList(List<T> items, int count, int pageNumber, int pageSize)
         {
             MetaData = new MetaData
@@ -26,10 +27,7 @@ namespace BurhanSample.Core.Utilities.Models.RequestFeatures
         public static PagedList<T> ToPagedList(List<T> source, int pageNumber, int pageSize, int count)
         {
             //var count = source.Count();
-
-            //var items = source.Skip((pageNumber - 1) * pageSize)
-            //                .Take(pageSize)
-            //                .ToList();
+            //var items = source.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 
             return new PagedList<T>(source, count, pageNumber, pageSize);
         }

@@ -1,67 +1,195 @@
-2022-07-14 00:06:47.956 +03:00 [INF] Now listening on: https://localhost:5001
-2022-07-14 00:06:48.092 +03:00 [INF] Now listening on: http://localhost:5000
-2022-07-14 00:06:48.094 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2022-07-14 00:06:48.096 +03:00 [INF] Hosting environment: Development
-2022-07-14 00:06:48.098 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
-2022-07-14 00:06:49.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
-2022-07-14 00:06:49.545 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
-2022-07-14 00:06:49.546 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 324.6263ms
-2022-07-14 00:06:49.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 25.3947ms
-2022-07-14 00:06:49.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
-2022-07-14 00:06:50.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.7705ms
-2022-07-14 00:07:32.351 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - -
-2022-07-14 00:07:32.399 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
-2022-07-14 00:07:32.446 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
-2022-07-14 00:07:33.715 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
-2022-07-14 00:07:35.395 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+2022-07-14 17:47:31.541 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-14 17:47:31.661 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-14 17:47:31.663 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-14 17:47:31.664 +03:00 [INF] Hosting environment: Development
+2022-07-14 17:47:31.666 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-14 17:47:32.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger - -
+2022-07-14 17:47:32.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger - - - 301 0 - 148.3241ms
+2022-07-14 17:47:32.751 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-14 17:47:33.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 412.3794ms
+2022-07-14 17:47:33.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - -
+2022-07-14 17:47:33.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-14 17:47:33.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - -
+2022-07-14 17:47:33.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - -
+2022-07-14 17:47:33.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.1370ms
+2022-07-14 17:47:33.280 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-07-14 17:47:33.286 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-07-14 17:47:33.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui.css - - - 200 143943 text/css 120.0559ms
+2022-07-14 17:47:33.297 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 129.8504ms
+2022-07-14 17:47:33.345 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-07-14 17:47:33.348 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/swagger-ui-bundle.js - - - 200 1095087 application/javascript 180.5616ms
+2022-07-14 17:47:33.805 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-14 17:47:34.017 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.1635ms
+2022-07-14 17:48:41.788 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=35&PageNumber=2&PageSize=2 - -
+2022-07-14 17:48:41.830 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:48:41.889 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:48:43.771 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:48:46.466 +03:00 [INF] Executed DbCommand (76ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
 SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
 FROM [Companies] AS [c]
 WHERE [c].[CompanyId] = @__companyId_0
-2022-07-14 00:07:35.452 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
-SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
-FROM [Employees] AS [e]
-WHERE [e].[CompanyId] = @__companyId_0
-ORDER BY [e].[Name]
-2022-07-14 00:07:35.796 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2022-07-14 00:07:35.817 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 3362.2283ms
-2022-07-14 00:07:35.823 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
-2022-07-14 00:07:35.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 3478.7730ms
-2022-07-14 00:33:48.871 +03:00 [INF] Now listening on: https://localhost:5001
-2022-07-14 00:33:48.913 +03:00 [INF] Now listening on: http://localhost:5000
-2022-07-14 00:33:48.915 +03:00 [INF] Application started. Press Ctrl+C to shut down.
-2022-07-14 00:33:48.916 +03:00 [INF] Hosting environment: Development
-2022-07-14 00:33:48.917 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
-2022-07-14 00:33:50.093 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
-2022-07-14 00:33:50.351 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 260.8584ms
-2022-07-14 00:33:50.357 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
-2022-07-14 00:33:50.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 108.2185ms
-2022-07-14 00:33:50.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
-2022-07-14 00:33:50.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 214.8713ms
-2022-07-14 00:34:22.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - -
-2022-07-14 00:34:22.794 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
-2022-07-14 00:34:22.841 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
-2022-07-14 00:34:23.956 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
-2022-07-14 00:34:25.671 +03:00 [INF] Executed DbCommand (54ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
-SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
-FROM [Companies] AS [c]
-WHERE [c].[CompanyId] = @__companyId_0
-2022-07-14 00:34:25.733 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
-2022-07-14 00:34:25.735 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
-2022-07-14 00:34:25.760 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+2022-07-14 17:48:46.527 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:48:46.530 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:48:46.582 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
 SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
 FROM (
     SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
     FROM [Employees] AS [e]
-    WHERE [e].[CompanyId] = @__companyId_0
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
     ORDER BY (SELECT 1)
-    OFFSET @__p_1 ROWS FETCH NEXT @__p_1 ROWS ONLY
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_3 ROWS ONLY
 ) AS [t]
 ORDER BY [t].[Name]
-2022-07-14 00:34:25.789 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+2022-07-14 17:48:46.604 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
 SELECT COUNT(*)
 FROM [Employees] AS [e]
 WHERE [e].[CompanyId] = @__companyId_0
-2022-07-14 00:34:25.992 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
-2022-07-14 00:34:26.013 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 3159.8637ms
-2022-07-14 00:34:26.017 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
-2022-07-14 00:34:26.023 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 3268.7338ms
+2022-07-14 17:48:47.003 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:48:47.024 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 5125.0335ms
+2022-07-14 17:48:47.028 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:48:47.034 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=35&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 5246.8140ms
+2022-07-14 17:48:55.172 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=32&PageNumber=2&PageSize=2 - -
+2022-07-14 17:48:55.186 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:48:55.190 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:48:55.234 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:48:55.243 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-14 17:48:55.249 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
+FROM (
+    SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+    FROM [Employees] AS [e]
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+ORDER BY [t].[Name]
+2022-07-14 17:48:55.253 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+2022-07-14 17:48:55.258 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:48:55.261 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 64.1068ms
+2022-07-14 17:48:55.267 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:48:55.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=32&PageNumber=2&PageSize=2 - - - 200 - application/json;+charset=utf-8 96.5860ms
+2022-07-14 17:49:13.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=32&PageNumber=1&PageSize=5 - -
+2022-07-14 17:49:13.215 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:49:13.218 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:49:13.230 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:49:13.238 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-14 17:49:13.249 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:49:13.253 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:49:13.263 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
+FROM (
+    SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+    FROM [Employees] AS [e]
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+) AS [t]
+ORDER BY [t].[Name]
+2022-07-14 17:49:13.275 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+2022-07-14 17:49:13.280 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:49:13.284 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 61.2423ms
+2022-07-14 17:49:13.289 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:49:13.293 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=32&PageNumber=1&PageSize=5 - - - 200 - application/json;+charset=utf-8 82.0420ms
+2022-07-14 17:49:35.777 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=28&PageNumber=1&PageSize=5 - -
+2022-07-14 17:49:35.780 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:49:35.783 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:49:35.790 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:49:35.798 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-14 17:49:35.807 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
+FROM (
+    SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+    FROM [Employees] AS [e]
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+) AS [t]
+ORDER BY [t].[Name]
+2022-07-14 17:49:35.816 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+2022-07-14 17:49:35.821 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:49:35.823 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 33.8126ms
+2022-07-14 17:49:35.826 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:49:35.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=20&MaxAge=28&PageNumber=1&PageSize=5 - - - 200 - application/json;+charset=utf-8 52.3607ms
+2022-07-14 17:51:21.752 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-14 17:51:21.799 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-14 17:51:21.801 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-14 17:51:21.802 +03:00 [INF] Hosting environment: Development
+2022-07-14 17:51:21.803 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API
+2022-07-14 17:51:22.963 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-14 17:51:23.306 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-14 17:51:23.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 351.6301ms
+2022-07-14 17:51:23.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.8169ms
+2022-07-14 17:51:23.770 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-14 17:51:23.974 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.1960ms
+2022-07-14 17:51:49.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=30&PageNumber=1&PageSize=5 - -
+2022-07-14 17:51:49.657 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:51:49.703 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:51:50.782 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:51:51.517 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-14 17:51:51.573 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:51:51.575 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results.
+2022-07-14 17:51:51.599 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
+FROM (
+    SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+    FROM [Employees] AS [e]
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+) AS [t]
+ORDER BY [t].[Name]
+2022-07-14 17:51:51.623 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+2022-07-14 17:51:51.826 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:51:51.848 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 2135.0945ms
+2022-07-14 17:51:51.851 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:51:51.858 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=30&PageNumber=1&PageSize=5 - - - 200 - application/json;+charset=utf-8 2244.7787ms
+2022-07-14 17:52:05.821 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=31&PageNumber=1&PageSize=5 - -
+2022-07-14 17:52:05.827 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:52:05.832 +03:00 [INF] Route matched with {action = "GetEmployees", controller = "Employees"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetEmployees(System.Guid, BurhanSample.Entities.RequestFeatures.EmployeeParameters) on controller BurhanSample.API.Controllers.EmployeesController (BurhanSample.API).
+2022-07-14 17:52:05.874 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-14 17:52:05.883 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+WHERE [c].[CompanyId] = @__companyId_0
+2022-07-14 17:52:05.892 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid), @__p_1='?' (DbType = Int64), @__p_2='?' (DbType = Int64), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[EmployeeId], [t].[Age], [t].[CompanyId], [t].[Name], [t].[Position]
+FROM (
+    SELECT [e].[EmployeeId], [e].[Age], [e].[CompanyId], [e].[Name], [e].[Position]
+    FROM [Employees] AS [e]
+    WHERE (([e].[CompanyId] = @__companyId_0) AND (CAST([e].[Age] AS bigint) >= @__p_1)) AND (CAST([e].[Age] AS bigint) <= @__p_2)
+    ORDER BY (SELECT 1)
+    OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+) AS [t]
+ORDER BY [t].[Name]
+2022-07-14 17:52:05.898 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__companyId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+WHERE [e].[CompanyId] = @__companyId_0
+2022-07-14 17:52:05.902 +03:00 [INF] Executing OkObjectResult, writing value of type 'Core.Utilities.Results.SuccessDataResult`1[[System.Collections.Generic.IEnumerable`1[[BurhanSample.Entities.Dto.EmployeeDto, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-14 17:52:05.906 +03:00 [INF] Executed action BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API) in 67.3036ms
+2022-07-14 17:52:05.912 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.EmployeesController.GetEmployees (BurhanSample.API)'
+2022-07-14 17:52:05.913 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/Employees?companyId=C9D4C053-49B6-410C-BC78-2D54A9991870&MinAge=31&PageNumber=1&PageSize=5 - - - 200 - application/json;+charset=utf-8 92.1761ms

@@ -5,9 +5,7 @@ using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace BurhanSample.DAL.Concrete.EntityFramework
@@ -25,7 +23,7 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public async Task<PagedList<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
-            var employees = await GetByCondition(e => e.CompanyId == companyId, trackChanges)
+            var employees = await GetByCondition(e => e.CompanyId == companyId && e.Age >= employeeParameters.MinAge && e.Age <= employeeParameters.MaxAge, trackChanges)
                          .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
                          .Take(employeeParameters.PageSize)
                          .OrderBy(e => e.Name)
@@ -38,11 +36,11 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public void CreateEmployeeForCompany(Guid companyId, Employee employee)
         {
-            employee.CompanyId = companyId; 
+            employee.CompanyId = companyId;
             Create(employee);
         }
 
         public void DeleteEmployee(Employee employee) => Delete(employee);
-        
+
     }
 }

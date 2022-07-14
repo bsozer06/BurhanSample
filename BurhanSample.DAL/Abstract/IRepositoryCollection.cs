@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BurhanSample.DAL.Abstract
 {
-    public interface IRepositoryManager
+    public interface IRepositoryCollection
     {
         ICompanyRepository Company { get; }
         IEmployeeRepository Employee { get; }

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace BurhanSample.DAL.Concrete.EntityFramework
 {
-    public class RepositoryManager : IRepositoryManager
+    public class RepositoryCollection : IRepositoryCollection
     {
         private RepositoryContext _context;
         private ICompanyRepository _companyRepository;
         private IEmployeeRepository _employeeRepository;
 
-        public RepositoryManager(RepositoryContext context)
+        public RepositoryCollection(RepositoryContext context)
         {
             _context = context;
         }

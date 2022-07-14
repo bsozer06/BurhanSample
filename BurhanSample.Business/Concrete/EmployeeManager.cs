@@ -19,21 +19,24 @@ namespace BurhanSample.Business.Concrete
 {
     public class EmployeeManager: IEmployeeManager
     {
-        private readonly IRepositoryManager _repository;
+        private readonly IRepositoryCollection _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
-        private readonly IHttpContextAccessor httpContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public EmployeeManager(IRepositoryManager repository, ILoggerManager logger, IMapper mapper, IHttpContextAccessor HttpContext)
+        public EmployeeManager(IRepositoryCollection repository, ILoggerManager logger, IMapper mapper, IHttpContextAccessor httpContextAccessor)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
-            httpContext = HttpContext;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<IDataResult<IEnumerable<EmployeeDto>>> GetEmployees(Guid companyId, EmployeeParameters employeeParameters)
         {
+            if (!employeeParameters.ValidAgeRange)
+                return new ErrorDataResult<IEnumerable<EmployeeDto>>("Max age can't be less than min age.");
+
             var company = await _repository.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
             {
@@ -44,7 +47,7 @@ namespace BurhanSample.Business.Concrete
             var employees = await _repository.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges: false);
 
             /// add headers info about the pagination parameters
-            httpContext.HttpContext.Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(employees.MetaData));
+            _httpContextAccessor.HttpContext.Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(employees.MetaData));
 
             var employeesDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
 

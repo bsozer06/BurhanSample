@@ -80,7 +80,7 @@ namespace BurhanSample.API.Extensions
 
         public static void ConfigureRepositoryManager(this IServiceCollection services)
         {
-            services.AddScoped<IRepositoryManager, RepositoryManager>();
+            services.AddScoped<IRepositoryCollection, RepositoryCollection>();
         }
 
         #endregion

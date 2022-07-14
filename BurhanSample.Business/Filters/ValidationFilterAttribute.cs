@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace BurhanSample.Business.Filters
 {
+    /// <summary>
+    /// Bu ActionResult iceren metotlarda attribute olarak kullanilabilir. Yani controller icerisinde kullanilabilir diyebiliriz.
+    /// </summary>
     public class ValidationFilterAttribute : IActionFilter
     //public class ValidationFilterAttribute : ActionFilterAttribute
     {

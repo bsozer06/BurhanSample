@@ -27,7 +27,7 @@ namespace BurhanSample.API
         {
             Configuration = configuration;
 
-            /// Serilog -> default olarak appsettings'den alýnýyor.
+            /// Serilog, default adiyla  appsettings'den alýnýyor. Default parametre adi "Serilog" olarak tanimlanmali !!
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
@@ -61,10 +61,14 @@ namespace BurhanSample.API
             // filters
             services.AddScoped<ValidationFilterAttribute>();
 
-
             services.AddControllers();
+
+            #region HttpContext config
+
             services.AddHttpContextAccessor();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            #endregion
 
 
             services.AddSwaggerGen(c =>
@@ -103,7 +107,11 @@ namespace BurhanSample.API
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
             });
 
-            app.ConfigureCustomExceptionMiddleware();       /// Come from the Core project
+            #region Custom middleware from my "Core" project
+
+            app.ConfigureCustomExceptionMiddleware();
+
+            #endregion
 
             app.UseHttpsRedirection();
 

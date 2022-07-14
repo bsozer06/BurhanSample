@@ -33,7 +33,6 @@ namespace BurhanSample.API.Controllers
             
         }
 
-        // calismayabilir.
         [HttpPost]
         public async Task<IActionResult> CreateEmployee(Guid companyId, [FromBody] EmployeeForCreationDto employee)
         {
