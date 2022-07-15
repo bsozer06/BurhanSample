@@ -25,6 +25,8 @@ namespace BurhanSample.Core.Utilities.Models.RequestFeatures
             } 
         }
 
+        public string OrderBy { get; set; }
+
 
     }
 }

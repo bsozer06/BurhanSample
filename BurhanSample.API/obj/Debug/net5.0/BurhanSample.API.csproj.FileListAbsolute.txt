@@ -123,3 +123,4 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Swa
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\obj\Debug\net5.0\BurhanSample.API.MvcApplicationPartsAssemblyInfo.cs
 D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\FluentValidation.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSample\BurhanSample.API\bin\Debug\net5.0\System.Linq.Dynamic.Core.dll

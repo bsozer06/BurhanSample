@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "o5qXKwmM3cfk5Xwxq3mEZDG6R3Fp54AQvKP2aJAasJwV3lAl2RpIOHu8XmEGMGy3ngN8Zld9IJy0WPJ+uAtxjQ==",
+  "dgSpecHash": "UKVELs46r2ajoKK78FJItWZBHuYM1K8zAFAljy5+FNpJnobYZ3MetGTeE1HrkyNgiUZNBVOR70IsgBvsTtR3FQ==",
   "success": true,
   "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\furka\\.nuget\\packages\\system.linq.dynamic.core\\1.2.18\\system.linq.dynamic.core.1.2.18.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",

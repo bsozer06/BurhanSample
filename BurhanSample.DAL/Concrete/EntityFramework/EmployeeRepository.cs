@@ -24,12 +24,14 @@ namespace BurhanSample.DAL.Concrete.EntityFramework
 
         public async Task<PagedList<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters, bool trackChanges)
         {
+            /// => Skip, Take bilerek burada kullanildi. 
+            /// sebep: Cok kayit olan database'in performans kaybinin onune gecmek icin.
             var employees = await GetByCondition(e => e.CompanyId == companyId, trackChanges)
                          .FilterEmployees(employeeParameters.MinAge, employeeParameters.MaxAge)
                          .Search(employeeParameters.SearchTerm)
+                         .Sort(employeeParameters.OrderBy)
                          .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
                          .Take(employeeParameters.PageSize)
-                         .OrderBy(e => e.Name)
                          .ToListAsync();
 
             var count = await GetByCondition(e => e.CompanyId == companyId, trackChanges).CountAsync();
