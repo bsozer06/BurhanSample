@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using BurhanSample.Core.Utilities.Models.RequestFeatures;
 
 namespace BurhanSample.Business.Concrete
 {
@@ -23,13 +24,15 @@ namespace BurhanSample.Business.Concrete
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IDataShaper<EmployeeDto> _dataShaper;              /// ????
 
-        public EmployeeManager(IRepositoryCollection repository, ILoggerManager logger, IMapper mapper, IHttpContextAccessor httpContextAccessor)
+        public EmployeeManager(IRepositoryCollection repository, ILoggerManager logger, IMapper mapper, IHttpContextAccessor httpContextAccessor, IDataShaper<EmployeeDto> dataShaper)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
             _httpContextAccessor = httpContextAccessor;
+            _dataShaper = dataShaper;
         }
 
         public async Task<IDataResult<IEnumerable<EmployeeDto>>> GetEmployees(Guid companyId, EmployeeParameters employeeParameters)

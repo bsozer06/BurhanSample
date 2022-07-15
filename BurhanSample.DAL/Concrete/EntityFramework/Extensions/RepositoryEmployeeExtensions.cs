@@ -57,7 +57,7 @@ namespace BurhanSample.DataAccess.Concrete.EntityFramework.Extensions
 
             var orderQuery = OrderQueryBuilder.CreateOrderQuery<Employee>(orderByQueryString);
 
-            0if (string.IsNullOrWhiteSpace(orderQuery))
+            if (string.IsNullOrWhiteSpace(orderQuery)) 
                 return employees.OrderBy(e => e.Name);          /// System.Linq (normal)
 
             return employees.OrderBy(orderQuery);               /// System.Linq.Dynamic.Core; (extra package)

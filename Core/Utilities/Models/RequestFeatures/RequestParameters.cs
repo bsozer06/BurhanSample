@@ -27,6 +27,8 @@ namespace BurhanSample.Core.Utilities.Models.RequestFeatures
 
         public string OrderBy { get; set; }
 
+        public string Fields { get; set; }
+
 
     }
 }

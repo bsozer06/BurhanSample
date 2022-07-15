@@ -2,7 +2,10 @@ using BurhanSample.API.Extensions;
 using BurhanSample.Business.Filters;
 using BurhanSample.Business.ValidationRules;
 using BurhanSample.Core.Extensions;
+using BurhanSample.Core.Utilities.Models.DataShaping;
+using BurhanSample.Core.Utilities.Models.RequestFeatures;
 using BurhanSample.DataAccess.Mapping.Profiles;
+using BurhanSample.Entities.Dto;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -67,6 +70,12 @@ namespace BurhanSample.API
 
             services.AddHttpContextAccessor();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            #endregion
+
+            #region Data shaping config
+
+            services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 
             #endregion
 
