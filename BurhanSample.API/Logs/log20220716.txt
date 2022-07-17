@@ -1,0 +1,30 @@
+2022-07-16 16:56:11.763 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-16 16:56:11.824 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-16 16:56:11.827 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-16 16:56:11.828 +03:00 [INF] Hosting environment: Development
+2022-07-16 16:56:11.830 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-16 16:56:12.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-16 16:56:13.406 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 450.5200ms
+2022-07-16 16:56:13.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-16 16:56:13.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 17.3857ms
+2022-07-16 16:56:13.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-16 16:56:13.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.1013ms
+2022-07-16 16:57:32.920 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-16 16:57:33.012 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-16 16:57:33.014 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-16 16:57:33.014 +03:00 [INF] Hosting environment: Development
+2022-07-16 16:57:33.015 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-16 16:57:33.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-16 16:57:34.255 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-16 16:57:34.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 261.7838ms
+2022-07-16 16:57:34.269 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 14.3629ms
+2022-07-16 16:57:34.576 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-16 16:57:34.760 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 184.9929ms
+2022-07-16 16:57:51.871 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:5001/api/Companies - -
+2022-07-16 16:57:51.881 +03:00 [INF] CORS policy execution successful.
+2022-07-16 16:57:51.918 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompaniesOptions (BurhanSample.API)'
+2022-07-16 16:57:51.945 +03:00 [INF] Route matched with {action = "GetCompaniesOptions", controller = "Companies"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCompaniesOptions() on controller BurhanSample.API.Controllers.CompaniesController (BurhanSample.API).
+2022-07-16 16:57:52.433 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2022-07-16 16:57:52.443 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesController.GetCompaniesOptions (BurhanSample.API) in 489.2658ms
+2022-07-16 16:57:52.447 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesController.GetCompaniesOptions (BurhanSample.API)'
+2022-07-16 16:57:52.450 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:5001/api/Companies - - - 200 0 - 579.0423ms

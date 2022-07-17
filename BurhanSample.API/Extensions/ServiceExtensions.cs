@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace BurhanSample.API.Extensions
 {
@@ -55,6 +57,8 @@ namespace BurhanSample.API.Extensions
 
         //#region Logging / Serilog
 
+        /// Core içerisine tasindi...
+
         //public static void ConfigureLoggerService(this IServiceCollection services) =>
         // services.AddScoped<ILoggerManager, LoggerManager>();
 
@@ -91,6 +95,21 @@ namespace BurhanSample.API.Extensions
         {
             services.AddScoped<ICompanyManager, CompanyManager>();
             services.AddScoped<IEmployeeManager, EmployeeManager>();
+        }
+
+        #endregion
+
+        #region Service Versioning
+
+        public static void ConfiguringVersioning(this IServiceCollection services)
+        {
+            services.AddApiVersioning(option =>
+            {
+                option.ReportApiVersions = true;
+                option.AssumeDefaultVersionWhenUnspecified = true;
+                option.DefaultApiVersion = new ApiVersion(1, 0);
+                //option.ApiVersionReader = new HeaderApiVersionReader("api-version");
+            });
         }
 
         #endregion

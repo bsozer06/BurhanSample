@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace BurhanSample.API.Controllers
 {
+    [ApiVersion("1.0")]
     public class CompaniesController : BaseApiController
     {
         private ICompanyManager _manager;
@@ -80,6 +81,13 @@ namespace BurhanSample.API.Controllers
             await _manager.UpdateCompany(id, company);
 
             return NoContent();
+        }
+
+        [HttpOptions]
+        public IActionResult GetCompaniesOptions()
+        { 
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST"); 
+            return Ok(); 
         }
 
     }

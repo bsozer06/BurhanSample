@@ -360,11 +360,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
+      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\Core\\BurhanSample.Core.csproj",
       "projectName": "BurhanSample.Core",
-      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj",
+      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\Core\\BurhanSample.Core.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\obj\\",
+      "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

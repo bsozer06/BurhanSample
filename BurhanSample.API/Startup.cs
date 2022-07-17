@@ -60,6 +60,7 @@ namespace BurhanSample.API
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
             services.ConfigureBusinessManager();
+            services.ConfiguringVersioning();
 
             // filters
             services.AddScoped<ValidationFilterAttribute>();

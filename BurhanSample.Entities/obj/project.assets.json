@@ -377,11 +377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
+      "projectUniqueName": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
       "projectName": "BurhanSample.Entities",
-      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
+      "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
       "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\obj\\",
+      "outputPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\BurhanSample.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -401,8 +401,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
-              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\Core\\BurhanSample.Core.csproj"
+            "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\Core\\BurhanSample.Core.csproj": {
+              "projectPath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\Core\\BurhanSample.Core.csproj"
             }
           }
         }

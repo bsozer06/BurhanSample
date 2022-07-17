@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5CbkTvw3HDLd/T7iXYziif8/ilJ2IYFoFkfLUVcQPWFd5ylmjuKIJacPYMwsdCIgC6qe64a6EYtoUSajWW2ogQ==",
+  "dgSpecHash": "7yOyF+AmNGCWmeleOHqiKzwFMcgGoQqxbzXRvFwibPyA8bWGF5yjkQt9N6xaqQyqdz4wpMPPvKKzJET/T0Xo0w==",
   "success": true,
-  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
+  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\BurhanSample.Entities\\BurhanSample.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.diagnostics.abstractions\\2.2.0\\microsoft.aspnetcore.diagnostics.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

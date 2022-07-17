@@ -1,0 +1,34 @@
+2022-07-17 11:13:52.493 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-17 11:13:52.552 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-17 11:13:52.555 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-17 11:13:52.556 +03:00 [INF] Hosting environment: Development
+2022-07-17 11:13:52.557 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-17 11:13:54.421 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-17 11:13:54.814 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 397.1158ms
+2022-07-17 11:13:54.890 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-17 11:13:54.899 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 9.2702ms
+2022-07-17 11:13:55.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-17 11:13:55.424 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 168.5905ms
+2022-07-17 11:14:48.312 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/2/CompaniesV - -
+2022-07-17 11:14:48.368 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API)'
+2022-07-17 11:14:48.415 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "CompaniesV"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanies() on controller BurhanSample.API.Controllers.CompaniesV2Controller (BurhanSample.API).
+2022-07-17 11:14:49.604 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=BurhanSample.DAL 
+2022-07-17 11:14:52.177 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-17 11:14:52.231 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-17 11:14:52.261 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API) in 3834.5759ms
+2022-07-17 11:14:52.264 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API)'
+2022-07-17 11:14:52.272 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/2/CompaniesV - - - 200 - application/json;+charset=utf-8 3960.1205ms
+2022-07-17 11:26:35.419 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-17 11:26:35.457 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-17 11:26:35.458 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-17 11:26:35.459 +03:00 [INF] Hosting environment: Development
+2022-07-17 11:26:35.460 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-17 11:26:36.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-17 11:26:36.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-17 11:26:36.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 270.8158ms
+2022-07-17 11:26:36.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.8994ms
+2022-07-17 11:26:36.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-17 11:26:37.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.4026ms

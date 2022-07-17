@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UKVELs46r2ajoKK78FJItWZBHuYM1K8zAFAljy5+FNpJnobYZ3MetGTeE1HrkyNgiUZNBVOR70IsgBvsTtR3FQ==",
+  "dgSpecHash": "WCfcPWOsxSOCYPFjJ2xP39KilcrwuHBsTU2GTxunl3bc0Q2QFSczIZIfS/TbF+v6sRBCjXoUqpjGsHFaA9XEBQ==",
   "success": true,
-  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
+  "projectFilePath": "D:\\burhan\\Codes\\2022\\CodeMaze\\BurhanSamplev2\\BurhanSample\\BurhanSample.DAL\\BurhanSample.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\furka\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\furka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
