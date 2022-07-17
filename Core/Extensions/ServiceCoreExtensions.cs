@@ -16,6 +16,13 @@ namespace BurhanSample.Core.Extensions
         public static void ConfigureLoggerService(this IServiceCollection services) =>
          services.AddScoped<ILoggerManager, LoggerManager>();
 
-        #endregion 
+        #endregion
+
+        #region JWT Service
+
+        public static void AddCustomAuthenticationService(this IServiceCollection services) =>
+            services.AddScoped<IAuthenticationManager, AuthenticationManager>();
+
+        #endregion
     }
 }

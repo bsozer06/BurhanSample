@@ -213,3 +213,9 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\obj\D
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\obj\Debug\net5.0\ref\BurhanSample.API.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\AspNetCoreRateLimit.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

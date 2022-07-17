@@ -66,8 +66,18 @@ namespace BurhanSample.API
             // filters
             services.AddScoped<ValidationFilterAttribute>();
 
+            // Identity
+            services.AddAuthentication();
+            services.ConfigureIdentity();
+            services.ConfigureJWT(Configuration);
+
+            // JWT service
+            services.AddCustomAuthenticationService();
+
+            // rate limiting
             services.AddMemoryCache();
             services.ConfigureRateLimitingOptions();
+            //services.AddHttpContextAccessor();
 
             services.AddControllers();
 
@@ -140,6 +150,7 @@ namespace BurhanSample.API
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BurhanSample.Core.Utilities.Models.Users;
 using BurhanSample.Entities.Concrete;
 using BurhanSample.Entities.Dto;
 using System;
@@ -26,6 +27,8 @@ namespace BurhanSample.DataAccess.Mapping.Profiles
             CreateMap<EmployeeForUpdateDto, Employee>().ReverseMap();
 
             CreateMap<CompanyForUpdateDto, Company>();
+
+            CreateMap<UserForRegistrationDto, User>();
         }
     }
 }

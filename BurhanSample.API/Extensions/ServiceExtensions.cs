@@ -16,6 +16,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using System.Collections.Generic;
 using AspNetCoreRateLimit;
+using BurhanSample.Entities.Concrete;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace BurhanSample.API.Extensions
 {
@@ -77,7 +82,7 @@ namespace BurhanSample.API.Extensions
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<RepositoryContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("SqlConnection")
-                    , x => x.MigrationsAssembly("BurhanSample.DAL")
+                    //, x => x.MigrationsAssembly("BurhanSample.DAL")
                 ));
 
         #endregion
@@ -118,8 +123,6 @@ namespace BurhanSample.API.Extensions
 
         #region Rate limiting and Throttling
 
-
-
         /// <summary>
         /// X-Rate-Limit-Limit : rate limit period.
         /// X-Rate-Limit-Remaining : number of remaining requests.
@@ -133,7 +136,7 @@ namespace BurhanSample.API.Extensions
                 new RateLimitRule
                 {
                     Endpoint = "*",
-                    Limit = 3,
+                    Limit = 30,
                     Period = "5m"
                 }
             };
@@ -151,11 +154,60 @@ namespace BurhanSample.API.Extensions
         }
 
 
+        #endregion
+
+        #region Identity
+
+        public static void ConfigureIdentity(this IServiceCollection services)
+        {
+            var builder = services.AddIdentityCore<User>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 5;
+                options.User.RequireUniqueEmail = true;
+            });
+
+            builder = new IdentityBuilder(builder.UserType, typeof(IdentityRole), builder.Services);
+
+            builder.AddEntityFrameworkStores<RepositoryContext>().AddDefaultTokenProviders();
+        }
+
+        #endregion
+
+        #region JWT Configs
+
+        public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)
+        {
+            var jwtSettings = configuration.GetSection("JwtSettings");
+            /// aslında bu saglikli degil !! Secretkey configde olmamalı !!1
+            var secretKey = configuration["JwtSettings:secretKey"];     
+
+            services.AddAuthentication(opt =>
+            {
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options => 
+            {
+                options.TokenValidationParameters = new TokenValidationParameters 
+                { 
+                    ValidateIssuer = true, 
+                    ValidateAudience = true, 
+                    ValidateLifetime = true, 
+                    ValidateIssuerSigningKey = true, 
+                    ValidIssuer = jwtSettings.GetSection("validIssuer").Value, 
+                    ValidAudience = jwtSettings.GetSection("validAudience").Value, 
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)) 
+                }; 
+            });
+        }
+
+        #endregion
+
+
+
     }
-
-    #endregion
-
-
-
-
 }
