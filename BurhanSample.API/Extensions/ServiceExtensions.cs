@@ -14,6 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using System.Collections.Generic;
+using AspNetCoreRateLimit;
 
 namespace BurhanSample.API.Extensions
 {
@@ -75,7 +77,7 @@ namespace BurhanSample.API.Extensions
         public static void ConfigureSqlContext(this IServiceCollection services, IConfiguration configuration) =>
             services.AddDbContext<RepositoryContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("SqlConnection")
-                    ,x => x.MigrationsAssembly("BurhanSample.DAL")
+                    , x => x.MigrationsAssembly("BurhanSample.DAL")
                 ));
 
         #endregion
@@ -113,6 +115,47 @@ namespace BurhanSample.API.Extensions
         }
 
         #endregion
+
+        #region Rate limiting and Throttling
+
+
+
+        /// <summary>
+        /// X-Rate-Limit-Limit : rate limit period.
+        /// X-Rate-Limit-Remaining : number of remaining requests.
+        /// X-Rate-Limit-Reset : date/time information about resetting the request limit.
+        /// </summary>
+        /// <param name="services"></param>
+        public static void ConfigureRateLimitingOptions(this IServiceCollection services)
+        {
+            var rateLimitRules = new List<RateLimitRule>
+            {
+                new RateLimitRule
+                {
+                    Endpoint = "*",
+                    Limit = 3,
+                    Period = "5m"
+                }
+            };
+
+            services.Configure<IpRateLimitOptions>(options =>
+            {
+                options.GeneralRules = rateLimitRules;
+            });
+
+            services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+            services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+            services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+            services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+
+        }
+
+
     }
+
+    #endregion
+
+
+
 
 }

@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using BurhanSample.API.Extensions;
 using BurhanSample.Business.Filters;
 using BurhanSample.Business.ValidationRules;
@@ -65,6 +66,9 @@ namespace BurhanSample.API
             // filters
             services.AddScoped<ValidationFilterAttribute>();
 
+            services.AddMemoryCache();
+            services.ConfigureRateLimitingOptions();
+
             services.AddControllers();
 
             #region HttpContext config
@@ -131,6 +135,8 @@ namespace BurhanSample.API
             {
                 ForwardedHeaders = Microsoft.AspNetCore.HttpOverrides.ForwardedHeaders.All
             });
+
+            app.UseIpRateLimiting();
 
             app.UseRouting();
 
