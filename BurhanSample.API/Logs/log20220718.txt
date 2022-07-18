@@ -1,0 +1,399 @@
+2022-07-18 22:34:03.778 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:34:05.101 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:34:05.104 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:34:05.106 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:34:05.108 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:34:05.109 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:34:06.920 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:34:07.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:34:07.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 465.3812ms
+2022-07-18 22:34:07.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 4.7389ms
+2022-07-18 22:34:07.672 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-18 22:34:07.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 193.1849ms
+2022-07-18 22:34:13.113 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - -
+2022-07-18 22:34:13.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 7.2546ms
+2022-07-18 22:34:16.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-18 22:34:16.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.7880ms
+2022-07-18 22:34:32.796 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - -
+2022-07-18 22:34:32.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 6.3277ms
+2022-07-18 22:38:30.734 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:38:31.282 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:38:31.285 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:38:31.286 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:38:31.287 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:38:31.288 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:38:32.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:38:32.944 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 458.3378ms
+2022-07-18 22:38:33.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:38:33.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.2156ms
+2022-07-18 22:38:33.270 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-18 22:38:33.469 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 199.6056ms
+2022-07-18 22:38:37.270 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - -
+2022-07-18 22:38:37.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 9.2646ms
+2022-07-18 22:39:07.799 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5001/api/Authentication/login application/json 55
+2022-07-18 22:39:07.810 +03:00 [INF] CORS policy execution successful.
+2022-07-18 22:39:08.498 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.AuthenticationController.Authenticate (BurhanSample.API)'
+2022-07-18 22:39:08.548 +03:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(BurhanSample.Core.Utilities.Models.Users.UserForAuthenticationDto) on controller BurhanSample.API.Controllers.AuthenticationController (BurhanSample.API).
+2022-07-18 22:39:10.099 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-07-18 22:39:12.554 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2022-07-18 22:39:12.811 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2022-07-18 22:39:13.220 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-18 22:39:13.250 +03:00 [INF] Executed action BurhanSample.API.Controllers.AuthenticationController.Authenticate (BurhanSample.API) in 4685.696ms
+2022-07-18 22:39:13.254 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.AuthenticationController.Authenticate (BurhanSample.API)'
+2022-07-18 22:39:13.265 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5001/api/Authentication/login application/json 55 - 200 - application/json;+charset=utf-8 5465.5885ms
+2022-07-18 22:39:44.304 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/api/2/Companies - -
+2022-07-18 22:39:44.427 +03:00 [INF] Successfully validated the token.
+2022-07-18 22:39:44.435 +03:00 [INF] Authorization was successful.
+2022-07-18 22:39:44.438 +03:00 [INF] Executing endpoint 'BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API)'
+2022-07-18 22:39:44.442 +03:00 [INF] Route matched with {action = "GetCompanies", controller = "CompaniesV"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCompanies() on controller BurhanSample.API.Controllers.CompaniesV2Controller (BurhanSample.API).
+2022-07-18 22:39:44.479 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'RepositoryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-07-18 22:39:44.503 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CompanyId], [c].[Address], [c].[Country], [c].[Name]
+FROM [Companies] AS [c]
+ORDER BY [c].[Name]
+2022-07-18 22:39:44.507 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BurhanSample.Entities.Concrete.Company, BurhanSample.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-18 22:39:44.513 +03:00 [INF] Executed action BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API) in 66.8412ms
+2022-07-18 22:39:44.522 +03:00 [INF] Executed endpoint 'BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies (BurhanSample.API)'
+2022-07-18 22:39:44.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/api/2/Companies - - - 200 - application/json;+charset=utf-8 223.3678ms
+2022-07-18 22:42:07.097 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:42:07.794 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:42:07.796 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:42:07.798 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:42:07.799 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:42:07.801 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:42:08.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:42:09.183 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:42:09.186 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 269.9112ms
+2022-07-18 22:42:09.187 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 7.7145ms
+2022-07-18 22:42:09.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-18 22:42:09.824 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 366.1124ms
+2022-07-18 22:45:29.509 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:45:30.233 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:45:30.234 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:45:30.237 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:45:30.238 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:45:30.240 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:45:31.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:45:37.071 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'.
+File name: 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass31_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at BurhanSample.API.Startup.<>c.<ConfigureServices>b__4_0(SwaggerGenOptions c) in D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\Startup.cs:line 124
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method3(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-18 22:45:37.380 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 500 - text/html;+charset=utf-8 6111.1563ms
+2022-07-18 22:45:37.413 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:45:37.422 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 8.9271ms
+2022-07-18 22:45:37.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-18 22:45:37.710 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'.
+File name: 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass31_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at BurhanSample.API.Startup.<>c.<ConfigureServices>b__4_0(SwaggerGenOptions c) in D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\Startup.cs:line 124
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method3(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-18 22:45:37.769 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 500 - text/plain 63.4247ms
+2022-07-18 22:48:14.386 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:48:15.063 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:48:15.065 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:48:15.068 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:48:15.072 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:48:15.074 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:48:16.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:50:59.441 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'.
+File name: 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass31_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at BurhanSample.API.Startup.<>c.<ConfigureServices>b__4_0(SwaggerGenOptions c) in D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\Startup.cs:line 148
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method3(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-18 22:50:59.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 500 - text/html;+charset=utf-8 163315.1665ms
+2022-07-18 22:50:59.776 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:50:59.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.0108ms
+2022-07-18 22:51:00.160 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/favicon.ico - -
+2022-07-18 22:51:00.162 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.FileNotFoundException: Could not find file 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'.
+File name: 'D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XPath.XPathDocument.LoadFromReader(XmlReader reader, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri, XmlSpace space)
+   at System.Xml.XPath.XPathDocument..ctor(String uri)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.<>c__DisplayClass31_0.<IncludeXmlComments>b__0()
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, Func`1 xmlDocFactory, Boolean includeControllerXmlComments)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenOptionsExtensions.IncludeXmlComments(SwaggerGenOptions swaggerGenOptions, String filePath, Boolean includeControllerXmlComments)
+   at BurhanSample.API.Startup.<>c.<ConfigureServices>b__4_0(SwaggerGenOptions c) in D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\Startup.cs:line 148
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Swashbuckle.AspNetCore.SwaggerGen.ConfigureSwaggerGeneratorOptions..ctor(IOptions`1 swaggerGenOptionsAccessor, IServiceProvider serviceProvider, IWebHostEnvironment hostingEnv)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitIEnumerable(IEnumerableCallSite enumerableCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitNoCache(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite singletonCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.Extensions.DependencyInjection.SwaggerGenServiceCollectionExtensions.<>c.<AddSwaggerGen>b__0_1(IServiceProvider s)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.GetService(IServiceProvider sp, Type type, Type middleware)
+   at lambda_method3(Closure , Object , HttpContext , IServiceProvider )
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<UseMiddleware>b__2(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-07-18 22:51:00.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/favicon.ico - - - 500 - text/plain 64.8327ms
+2022-07-18 22:53:58.926 +03:00 [INF] User profile is available. Using 'C:\Users\furka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-07-18 22:53:59.538 +03:00 [INF] Now listening on: https://localhost:5001
+2022-07-18 22:53:59.541 +03:00 [INF] Now listening on: http://localhost:5000
+2022-07-18 22:53:59.543 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-07-18 22:53:59.544 +03:00 [INF] Hosting environment: Development
+2022-07-18 22:53:59.545 +03:00 [INF] Content root path: D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API
+2022-07-18 22:54:00.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/index.html - -
+2022-07-18 22:54:01.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/index.html - - - 200 - text/html;charset=utf-8 324.2496ms
+2022-07-18 22:54:01.121 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - -
+2022-07-18 22:54:01.127 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/_framework/aspnetcore-browser-refresh.js - - - 200 11990 application/javascript;+charset=utf-8 5.1777ms
+2022-07-18 22:54:01.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - -
+2022-07-18 22:54:01.395 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - -
+2022-07-18 22:54:01.422 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-07-18 22:54:01.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/favicon-32x32.png - - - 200 628 image/png 35.4963ms
+2022-07-18 22:54:01.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.5527ms
+2022-07-18 22:54:05.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - -
+2022-07-18 22:54:05.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5001/swagger/v2/swagger.json - - - 200 - application/json;charset=utf-8 11.5273ms

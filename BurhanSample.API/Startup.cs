@@ -20,7 +20,9 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace BurhanSample.API
@@ -97,7 +99,53 @@ namespace BurhanSample.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "My API", 
+                    Version = "v1",
+                    Description = "CompanyEmployees API by CodeMaze",
+                    TermsOfService = new Uri("https://example.com/terms"),
+                    Contact = new OpenApiContact 
+                    { 
+                        Name = "Burhan", 
+                        Email = "bsozer06@gmail.com", 
+                        Url = new Uri("https://twitter.com/johndoe")
+                    },
+                    License = new OpenApiLicense 
+                    {
+                        Name = "CompanyEmployees API LICX", 
+                        Url = new Uri("https://example.com/license")
+                    } 
+            });
+
+                c.SwaggerDoc("v2", new OpenApiInfo { Title = "My API", Version = "v2" });
+
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "Place to add JWT with Bearer",
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Name = "Bearer",
+                        },
+                        new List<string>()
+                    }
+                });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
 
             #region Content type => XML
@@ -128,7 +176,8 @@ namespace BurhanSample.API
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API v2");
             });
 
             #region Custom middleware from my "Core" project

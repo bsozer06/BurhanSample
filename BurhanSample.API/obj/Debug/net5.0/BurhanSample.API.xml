@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BurhanSample.API</name>
+    </assembly>
+    <members>
+        <member name="M:BurhanSample.API.Controllers.CompaniesV2Controller.GetCompanies">
+            <summary>
+            Gets the list of all companies
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BurhanSample.API.Controllers.EmployeesController.#ctor(BurhanSample.Business.Abstract.IEmployeeManager,BurhanSample.Core.Utilities.Models.RequestFeatures.IDataShaper{BurhanSample.Entities.Dto.EmployeeDto})">
+            ????
+        </member>
+        <member name="M:BurhanSample.API.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure CORS options as the extension.  
+            Author=Burhan Sözer
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BurhanSample.API.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure IIS options.  
+            Author=Burhan Sözer 
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BurhanSample.API.Extensions.ServiceExtensions.ConfigureSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure MSSQL context.
+            Author=Burhan Sözer 
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:BurhanSample.API.Extensions.ServiceExtensions.ConfigureRateLimitingOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            X-Rate-Limit-Limit : rate limit period.
+            X-Rate-Limit-Remaining : number of remaining requests.
+            X-Rate-Limit-Reset : date/time information about resetting the request limit.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BurhanSample.API.Helper.ModelBinder.ArrayModelBinder.BindModelAsync(Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingContext)">
+            <summary>
+            Comma ile ayrilmis String değerini Guid array tipine donusturme islemi
+            </summary>
+            <param name="bindingContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

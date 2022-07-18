@@ -219,3 +219,5 @@ D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\D
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\bin\Debug\net5.0\BurhanSample.API.xml
+D:\burhan\Codes\2022\CodeMaze\BurhanSamplev2\BurhanSample\BurhanSample.API\obj\Debug\net5.0\BurhanSample.API.xml

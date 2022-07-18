@@ -8,6 +8,7 @@ namespace BurhanSample.API.Controllers
 {
     [ApiVersion("2.0")]
     [Route("api/{v:apiversion}/Companies")]
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     public class CompaniesV2Controller : ControllerBase
     {
@@ -17,6 +18,11 @@ namespace BurhanSample.API.Controllers
             _repository = repository;
         }
 
+
+        /// <summary>
+        /// Gets the list of all companies
+        /// </summary>
+        /// <returns></returns>
         [Authorize(Roles = "Manager")]          /// Role-based authorization
         [HttpGet(Name = "GetCompanies")]
         public async Task<IActionResult> GetCompanies()
